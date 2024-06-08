@@ -1,4 +1,5 @@
 import requests
+from typing import Optional
 from time import sleep
 
 
@@ -20,7 +21,8 @@ def send_request(url, method, data, json, attempt):
     return None
 
 
-def send_request_with_retries(url, method='get', data=None, json=None, retries=6, delay=10):
+def send_request_with_retries(url, method='get', data=None, json=None, retries=6, delay=10) -> Optional[requests.Response]:
+    print(f"Sending {method.upper()} request to {url}\n")
     for idx in range(retries):
         response = send_request(url, method, data, json, idx+1)
         if response is not None:
