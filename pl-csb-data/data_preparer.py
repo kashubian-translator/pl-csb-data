@@ -20,5 +20,5 @@ def prepare_translation_dataset(data_path: str) -> Tuple[pd.DataFrame, pd.DataFr
 
 def prepare() -> None:
     data_path = "data"
-    train_df = prepare_translation_dataset(data_path)
-    train_df.to_csv(f"{data_path}/train.tsv", sep="\t")
+    train_df = prepare_translation_dataset(f"{data_path}/input")
+    train_df.to_csv(f"{data_path}/output/train.tsv", sep="\t")
