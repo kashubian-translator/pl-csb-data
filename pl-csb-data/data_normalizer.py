@@ -34,11 +34,10 @@ def normalize_translation_dataset(train_df: pd.DataFrame) -> None:
 
     return train_df
 
-def normalize() -> None:
+def normalize(input_path: str, output_path: str) -> None:
     tokenizer = NllbTokenizer.from_pretrained("facebook/nllb-200-distilled-600M", additional_special_tokens=["csb_Latn"])
     
-    train_data_path = "data/output/train.tsv"
-    train_df = pd.read_csv(train_data_path, sep='\t', index_col=0)
+    train_df = pd.read_csv(input_path, sep='\t', index_col=0)
 
     check_for_unknown_tokens(tokenizer, train_df)
 
@@ -51,4 +50,4 @@ def normalize() -> None:
 
     check_for_unknown_tokens(tokenizer, train_df)
 
-    train_df.to_csv(train_data_path, sep="\t")
+    train_df.to_csv(output_path, sep="\t")
