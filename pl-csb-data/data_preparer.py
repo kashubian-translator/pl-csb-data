@@ -6,9 +6,9 @@ def read_text_file(filename: str) -> list:
     with open(filename, "r", encoding="utf-8") as file:
         return [line.strip("\n") for line in file.readlines()]
 
-def prepare_translation_dataset(data_path: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    kashubian_train = read_text_file(os.path.join(data_path, "train.trg"))
-    polish_train = read_text_file(os.path.join(data_path, "train.src"))
+def prepare_translation_dataset(source_path: str, target_path: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    kashubian_train = read_text_file(target_path)
+    polish_train = read_text_file(source_path)
 
     train_data = []
     for kashubian, polish in zip(kashubian_train, polish_train):
@@ -18,7 +18,6 @@ def prepare_translation_dataset(data_path: str) -> Tuple[pd.DataFrame, pd.DataFr
 
     return train_df
 
-def prepare() -> None:
-    data_path = "data"
-    train_df = prepare_translation_dataset(f"{data_path}/input")
-    train_df.to_csv(f"{data_path}/output/train.tsv", sep="\t")
+def prepare(source_path: str, target_path: str, output_path: str) -> None:
+    train_df = prepare_translation_dataset(source_path, target_path)
+    train_df.to_csv(output_path, sep="\t")
