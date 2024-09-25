@@ -6,10 +6,10 @@ from transformers import NllbTokenizer
 from sacremoses import MosesPunctNormalizer
 
 def check_for_unknown_tokens(tokenizer: NllbTokenizer, train_df: pd.DataFrame) -> None:
-    unknown_tokens = [text for text in tqdm(train_df.csb) if tokenizer.unk_token_id in tokenizer(str(text)).input_ids]
+    unknown_tokens = [text for text in tqdm(train_df.csb_Latn) if tokenizer.unk_token_id in tokenizer(str(text)).input_ids]
     print(f"Found {len(unknown_tokens)} unknown tokens in the CSB data")
 
-    unknown_tokens = [text for text in tqdm(train_df.pl) if tokenizer.unk_token_id in tokenizer(str(text)).input_ids]
+    unknown_tokens = [text for text in tqdm(train_df.pol_Latn) if tokenizer.unk_token_id in tokenizer(str(text)).input_ids]
     print(f"Found {len(unknown_tokens)} unknown tokens in the PL data")
 
 def remove_rows_with_unknown_tokens(tokenizer: NllbTokenizer, train_df: pd.DataFrame, train_df_col: pd.Series) -> pd.DataFrame:
@@ -28,9 +28,12 @@ def normalize_translation_dataset(train_df: pd.DataFrame) -> None:
     mpn.substitutions = [
         (re.compile(r), sub) for r, sub in mpn.substitutions
     ]
+
+    source_column = train_df.columns[0]
+    target_column = train_df.columns[1]
     
-    train_df["csb"] = train_df.csb.apply(mpn.normalize)
-    train_df["pl"] = train_df.pl.apply(mpn.normalize)
+    train_df[source_column] = train_df[source_column].apply(mpn.normalize)
+    train_df[target_column] = train_df[target_column].apply(mpn.normalize)
 
     return train_df
 
@@ -45,8 +48,8 @@ def normalize(input_path: str, output_path: str) -> None:
     train_df = normalize_translation_dataset(train_df)
 
     print("Removing rows with unknown tokens")
-    train_df = remove_rows_with_unknown_tokens(tokenizer, train_df, train_df.csb)
-    train_df = remove_rows_with_unknown_tokens(tokenizer, train_df, train_df.pl)
+    train_df = remove_rows_with_unknown_tokens(tokenizer, train_df, train_df[train_df.columns[0]])
+    train_df = remove_rows_with_unknown_tokens(tokenizer, train_df, train_df[train_df.columns[1]])
 
     check_for_unknown_tokens(tokenizer, train_df)
 
