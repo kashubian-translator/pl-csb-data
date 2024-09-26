@@ -13062,7 +13062,7 @@ Jeżlë zaznaczoné, Amarok òdczëtô wszëtczé pòdkatalodżi.
 Jeżlë zaznaczoné, katalodżi bãdą aùtomatno przeszëkóné, czedë jich zamkłosc bãdze zmienionô, np. czej dodóny òstanié nowi lopk.
 Spòdlé kòlekcëji
 Titel Title with track number track name fixed with the track number playlist column name and token for playlist layouts
-Kòmpòzytor Cover image playlist column name and token for playlist layouts
+Kòmpòzytor Cover playlist column name and token for playlist layouts
 Rok
 Dopòwiesc Composer playlist column name and token for playlist layouts
 Zort Group length total play of group playlist column name and token for playlist layouts
@@ -13901,7 +13901,7 @@ Mies.
 Sekùndë
 Minutë
 Gòdz.
-Ùstôwi swòją òbkłôdkã Cover image playlist column name and token for playlist layouts
+Ùstôwi swòją òbkłôdkã Cover playlist column name and token for playlist layouts
 Òbkłôdka
 Òbkłôdka je nalazłô
 Òbkłôdka je nalazłô
@@ -14201,7 +14201,7 @@ Robòta przerwanô przez brëkòwnika.
 Sprôwdzë lopczi
 Nie mòże nalezc wëkònëwólnegò lopka .
 Do zgraniô platë VideoCD nót je winstalowac VcdImager w wersëji .
-Mòżesz to nalezc w swòji distribùcëji abò zladowac ze starnë http www. vcdimager. org
+Mòżesz to nalezc w swòji distribùcëji abò zladowac ze starnë http www. vcdr. org
 Wëkònëwólny lopk je za stôri! Nót je wersëjô abò wëższô.
 Brëkùnk Ùsôdzczi prawa C .
 Zgrëwanié
@@ -15258,7 +15258,7 @@ http www. google. com search? q=\\\\ {} ie=UTF oe=UTF
 Google archiwa diskùsjowëch karnówQuery
 http groups. google. com groups? oi=djqas q=\\\\ {}
 Google szëkba òbrôzkówQuery
-http images. google. com images? q=\\\\ {}
+http s. google. com s? q=\\\\ {}
 Google "Szczestlëwé trafienié" Query
 http www. google. pl search? q=\\\\ {} btnI=I mFeelingLuckyie=UTF oe=UTF
 Google filmëQuery
@@ -17341,12 +17341,12 @@ Dodôj nowi mùster dlô wëbrónëch ôrtów lopków.
 Rëmôj wëbróny mùster lopków.
 Tuwò mòże wprowadzëc krótczi òpisënk lopków ò wëbrónëm ôrce np "Starna HTML". Nen òpis bãdze brëkòwóny w progarmach taczich jakno Konqueror do wëskrzëniwaniô zamkłoscë katalogów.
 Pëtôj, czë zapisac na disk blós dlô Konquerora
-Tuwò mòże wskôzac, co zrobi menadżera lopków Konqueror, jak klëknie sã na lopk tegò ôrtu. Konqueror mòże wëskrzënic zamkłosc lopka w òbsadzonym przezérnikù w swòjim òknie abò zrëszëc apartną programã. Eżlë zrëszisz òptacëjã "Brëkùjë nastôwów dlô karna" to Konqueror bãdze sã trzëmôł stosowno do nastôwów dlô karna, do jaczégò przënôlégô biéżny ôrt lopka np. do karna òbrôzk dlô lopków ôrtu image png. Dolphin wëskrzëniô lopczi wiedno w aprtnym òknie.
+Tuwò mòże wskôzac, co zrobi menadżera lopków Konqueror, jak klëknie sã na lopk tegò ôrtu. Konqueror mòże wëskrzënic zamkłosc lopka w òbsadzonym przezérnikù w swòjim òknie abò zrëszëc apartną programã. Eżlë zrëszisz òptacëjã "Brëkùjë nastôwów dlô karna" to Konqueror bãdze sã trzëmôł stosowno do nastôwów dlô karna, do jaczégò przënôlégô biéżny ôrt lopka np. do karna òbrôzk dlô lopków ôrtu png. Dolphin wëskrzëniô lopczi wiedno w aprtnym òknie.
 Òbsadzanié
 Dodôj nowé rozszérzenié
 Rozszérzenié
 Brëkùjë nastôwów dlô karna
-Sparłączenié lopków Mòduł zezwôlô na wëbiérk tegò, jaczé programë są sparłączoné z gwësnym ôrtã lopków. Ôrtë lopków są téż òznaczoné jakno ôrtë MIME MIME je angielską skrodzëną òd "Ùniwersalnégò Rozszérzeniô Internetowi Elektroniczny Pòcztë". Sparłączenié lopka zëstôwioné je z reglama determinëjącëch ôrt MIME lopka. Na przëmiôr mùster miona . png, jaczi òznôczô wszëtczé lopczi z mionama z kùniuszkã. png je sparłącozny z ôrtã MIME "image png". krótczim òpisã ôrtu MIME. Na przëmiôr òpis ôrtu MIME "image png" to zwëczajno òbrôzk PNG. ikònama brëkòwónëma przë wëskrzëniwanim lopka ò gwësnym ôrce MIME, co zezwôlô na jich prosté rozpòznanié przënômni dlô czãsto brëkòwónëch ôrtów!. lëstama programów brëkòwónëch do òtmëkaniô lopków gwësnegò ôrtu MIME. Jeżlë to dô wicy jak jedną taką programã, to ùsôdzanô je prioritetowô lësta. Niejedné ôrtë MIME nie mają co mòże wëdôwac sã kąsk dzywné sparłączonëch mùstrów mionów. W taczich przëtrôfkach KDE je w sztãdze rozpòznac ôrt lopka, badérejąc jegò zamkłosc.
+Sparłączenié lopków Mòduł zezwôlô na wëbiérk tegò, jaczé programë są sparłączoné z gwësnym ôrtã lopków. Ôrtë lopków są téż òznaczoné jakno ôrtë MIME MIME je angielską skrodzëną òd "Ùniwersalnégò Rozszérzeniô Internetowi Elektroniczny Pòcztë". Sparłączenié lopka zëstôwioné je z reglama determinëjącëch ôrt MIME lopka. Na przëmiôr mùster miona . png, jaczi òznôczô wszëtczé lopczi z mionama z kùniuszkã. png je sparłącozny z ôrtã MIME " png". krótczim òpisã ôrtu MIME. Na przëmiôr òpis ôrtu MIME " png" to zwëczajno òbrôzk PNG. ikònama brëkòwónëma przë wëskrzëniwanim lopka ò gwësnym ôrce MIME, co zezwôlô na jich prosté rozpòznanié przënômni dlô czãsto brëkòwónëch ôrtów!. lëstama programów brëkòwónëch do òtmëkaniô lopków gwësnegò ôrtu MIME. Jeżlë to dô wicy jak jedną taką programã, to ùsôdzanô je prioritetowô lësta. Niejedné ôrtë MIME nie mają co mòże wëdôwac sã kąsk dzywné sparłączonëch mùstrów mionów. W taczich przëtrôfkach KDE je w sztãdze rozpòznac ôrt lopka, badérejąc jegò zamkłosc.
 Nalézë mùstrë mionów abò ôrtów lopków
 Wprowôdzë dzél mùstra lopków. Na lëscë pòkôżą sã blós ôrtë lopków, chtërné do niegò pasëją. Abò wpiszë le dzélk miona ôrtu lopka w miarã jak pòkazëjë sã na lëscë.
 Znóné ôrtë
@@ -17387,7 +17387,7 @@ Wëbierzë ùsłëżnotã
 Karno
 Wëbierzë kategòrëjã, do jaczi nowi ôrt lopka mô òstac dodóny.
 Miono ôrtu
-Wpiszë miono ôrtu lopka. Na przëmiôr, jeżlë wëbierzesz image jakno kategòrëjã a wpiszësz custom tuwò, ôrt lopkù image custom òstanie ùsôdzony. NAME OF TRANSLATORS
+Wpiszë miono ôrtu lopka. Na przëmiôr, jeżlë wëbierzesz jakno kategòrëjã a wpiszësz custom tuwò, ôrt lopkù custom òstanie ùsôdzony. NAME OF TRANSLATORS
 Mark Kwidzińsczi, Michôł ÒstrowscziEMAIL OF TRANSLATORS
 mark linuxcsb. org, michol linuxcsb. org
 KHtmlIndex
@@ -17402,8 +17402,8 @@ Mark Kwidzińsczi, Michôł ÒstrowscziEMAIL OF TRANSLATORS
 mark linuxcsb. org, michol linuxcsb. org
 Chcesz nôdpisac lewi òbrôzk tim z prawi.
 Òbrôzk nie je trzëmóny na môlowim kòmpùtrze. Klëkni na nôdpis bë gò wladowac.
-Nie mòże wladowac òbrôzaThe color depth of an image
-Głãbiô The dimensions of an image
+Nie mòże wladowac òbrôzaThe color depth of an
+Głãbiô The dimensions of an
 Miara x
 Kalibracëjô
 Dali
@@ -19269,10 +19269,10 @@ Menadżera logòwaniô wszëtczéch zaznaczonëch brëkòwników. Môle òznôcz
 Wëłączeni brëkòwnicë
 Menadżera logòwaniô pòkôże wszëtczéch niezaznaczonëch brëkòwników. Môle òznôczoné przez to grëpë brëkòwników zaznaczenié grëpë je równé zaznaczeniu wszëtczéch brëkòwników z grëpë. group source for user faces
 Òbrôzczi brëkòwników
-Tuwò mòże wëbrac, skądka KDM pòbiérô òbrôzczi dlô apartnëch brëkòwników. "Òglowé" to òbrôzczi z òglowégò katalogù do wëbraniô niżi. "Indiwidualné" òznôczô, że KDM mô ladowac òbrôzk z lopkù. face. icon z katalogù brëkòwnika. Pòstãpné dwie òptacëje definiują rézã ùżëca, eżlë przistãpné są òba zdroje. option radio image source
-Systema option radio image source
-Systema, brëkòwnik option radio image source
-Brëkòwnik, systema option radio image source
+Tuwò mòże wëbrac, skądka KDM pòbiérô òbrôzczi dlô apartnëch brëkòwników. "Òglowé" to òbrôzczi z òglowégò katalogù do wëbraniô niżi. "Indiwidualné" òznôczô, że KDM mô ladowac òbrôzk z lopkù. face. icon z katalogù brëkòwnika. Pòstãpné dwie òptacëje definiują rézã ùżëca, eżlë przistãpné są òba zdroje. option radio source
+Systema option radio source
+Systema, brëkòwnik option radio source
+Brëkòwnik, systema option radio source
 Brëkòwnik group user face assignments
 Òbrôzczi brëkòwnika
 Brëkòwnik, do chtërnégò słëchô òbrôzk.
@@ -28920,8 +28920,8 @@ Skóknié do pierszégò sztripka
 Skóknié do biéżnégò sztripka
 Skóknié do sztripka
 Òbaczë króm starnë
-Zapiszë kòmiks jakno option check Context menu of comic image
-Aktualnô miara option check Context menu of comic image
+Zapiszë kòmiks jakno option check Context menu of comic
+Aktualnô miara option check Context menu of comic
 Trzëmôj terné pòłożenié
 Òbaczë starnã kòmiksuan abbrevation for
 Wcësni knąpã "Zladëjë nowé kòmiksë" bë zajinstalowac kòmiksë.
@@ -31180,7 +31180,7 @@ FalszMatch Windows Explorer
 All other platforms
 Mac OS X Finder
 All other platforms
-Nieznónô felaTitle string for images
+Nieznónô felaTitle string for s
 QSoftKeyManager
 Zaznaczë
 Spacëjô
@@ -31409,8 +31409,8 @@ Writing direction context sub menu
 Text direction context sub menu
 DomëszlnéLeft to Right
 Prawò
-InsLabel for only in menu that appears when clicking on the search field image, when no searches have been performed
-label for first in the menu that appears when clicking on the search field image, used as embedded menu
+InsLabel for only in menu that appears when clicking on the search field , when no searches have been performed
+label for first in the menu that appears when clicking on the search field , used as embedded menu
 menu in Recent Searches menu that empties menu s contents
 controller status message when the media is loading
 controller status message when watching a live broadcast
@@ -60174,8 +60174,7 @@ Zakres, w jaczim różné rënczi są wòlné i zasadë òkreslającé włôsnos
 Wiãkszosc jistniejącëch gòspòdarków kapitalistycznych to gòspòdarczi mieszóné, chtëne łączą elementë wòlnégò rënkù z interwencją państwa i w niechtërnëch przëpôdkach planowanim gòspodarczim.
 Fela ladowaniô rapòrtu ò felë . Proszã kąsk pòżdac ë spróbòwac znowa. info
 Compositing òstôł zastãpiony przez jinszą aplikacëjã. Mòżesz gò zrëszëc skrodzëną .
-image
-imageconvert
+convert
 Felëjë przistãpù do nëkù . Nëk je wcyg zajãtô. Żdôj jaż zakùńczë robòtã ë spróbùjë znowa.
 p, li {white space wrap;} Wsôdowé planowanié Òd Linuksa . . . Na pòlitika schlachùje za zwëczajną, równak na doprowôdzô do tegò, że planowanié zakłôdô wiôldżé brëkòwanié procesora przez proces. Przez to nałożi niewiôlgą sztrafã, chtërnô dô kąsk gòrszé achtniãcé taczegò procesu. Na pòlitika je brëkòwnô dlô karnów nieinteraktiwnych dzejaniôw, chtërné równak ni chcą zmniészëc prioritetu wôrtnotë nice, a téż dlô dzejaniów brëkùjących deterministicznegò dzejaniô planowaniô bez interaktiwnotë prowôdzący do dodôwné sparłãczenia midzy dzejaniama przënôlegającyma do karna.
 Ni mòże zrëszëc ùsłëżnotë .
@@ -60191,7 +60190,6 @@ Nie mòże zrëszëc pòlétu .
 <span>Firefox<span> dlô Androida
 Pòkôza sã fela przë wladowaniô mòdułu . Prôwdopòdobnô przëczna to
 Nie mòże nalezc archiwùm KDM témë .
-image
 Nie mòże òtaksowac ôrtu zdroju .
 Programa robi robòtów w wątkach. Kòżdô robòta żdô na przëtrôfkòwą wielënã milisekùndów midzë a
 Kachle Pòz , ,
@@ -60231,8 +60229,6 @@ Felëje przistãpù do nëkù . Mést nie mô diskù w nëkù
 fela parsowaniô w réze , kòlumnie
 Kònteksthelp
 Pòdónô lëchô adresa URL , kùńczenié
-image
-image
 Proszã wëbrac bezzmiłkòwi katalog bùdowaniô khtml
 Fela ladowaniô .
 Editora palétëdialogs
@@ -60241,21 +60237,18 @@ Nie mòże òdebrac .
 Nie mòże òdczëtac wëdowiédzë ò drëkerze .
 Nie mòże sprôwdzëc identifikacëji daleczégò kòmpùtra . Sztãplëna klucza tegò kòmpùtra to Zanim pòłączësz sã, nót je pòcwierdzëc ù sprôwnika ti serwerë, że sztãplëna je proôwdzëwô. Chcesz akceptowac klucz kòmpùtra ë pòłączëc sã nimò tegò?
 Nié mòże òtemknąc lopka .
-imageconvert
+convert
 Nie mòże òdczëtac wëdowiédzë ò klase .
 Zestawienié klawiszów òstało przëpisóné globalnemù dzejaniô w . Przëpisac je w môlu biéżnegò dzejaniô?
-images
 ECMA Edition mni wicy Javascript .
 nié òstôł nalazłi, winstalëjë paczét gò w se zamëkający
 Włączëc nôslédny kanał softwôrë ?
 Zamienic przez ?
-image
 Môsz dobëté. Môsz nawetka rëmniãté slédny kam, bëlnô robòta! Twòjô wëszłosc to .
 Na programa nie je wspierónô przez systemã szlachòwaniô felów KDE. Klëkni na Zakùńczë, abë wësłac rapòrt ò felë ti programë jegò dozérôczowi. Mòżesz rãczno rapòrtowac tuwò . info
 Wcësni , ga włączoné są NumLock, CapsLock ë ScrollLock
 Serwer, nimò tegò, że je sparłãczony z internetã, mòże nie ùprzistãpniac żądóny ùsłëżnotë .
 Ni mòże òtemknąc bibloteczi .
-image
 Ni mòże sparłãczëc sã z serwerã .
 Wëstãpiła nieznónô fela òbczas kòpijowaniô lopkù do . Proszã spróbòwac znowa.
 Ni mòże rëmnąc kataloga .
@@ -60277,7 +60270,6 @@ Zmianë atribùtów lopków nie są òbsłëgiwóné przez protokół .
 Próba rëmniãcô żądónegò kataloga, , nie darzëła sã.
 Mòdul do wladowania òbrôzów nie ekspòrtëjë gwësnegò interfejsu; czë mòże bëc, że je òn z jinëj wersëji GTK?
 Nie mòże ùsôdzëc kataloga .
-image
 Wcësni , ga włączony je CapsLock
 zamëkô w se fònt , chtëren je w twòji systemie ju winstalowóny.
 Proszã pòdac parolã dlô klucza x , chtëren przënôlégô do lt; gt;
@@ -60290,9 +60282,7 @@ Lëchi URL .
 Ni mòże òtemknąc lopka , òprzestanié.
 Je to ikònã sparłãczonô z wëbrónym ôrtã lopka. Bë zmienic ikònã je nót paczétu "shared mime info" w wersëji . abò nowszi.
 Editora palétëdialogs
-image
-image
-imageconvert
+convert
 Nie mòże wësztartowac serwerë .
 Paczétowi je nót wersëja òd , przëstãpnô je rówank blós
 Ni mòże rëmnąc lopka .
@@ -60310,20 +60300,17 @@ Na gwës chcesz rëmnąc ? To rëmnie blós karno, a nié aktualné fòntë.
 Równio kòntrastu
 Niejedné starnë WWW aktiwùją òkna ùżëwając pòlétu . focus . Zwëczajno doprowôdzô to do przerwaniô aktualnegò dzejaniô brëkòwnika. Na òptacëjô zezwôlô na kònfigùracëjã òbsłużënkù taczich pòlétów.
 Cascading Style Sheets CSS , dzélowò CSS
-image
 Ni mòże nalezc wëkònëwólnegò lopka .
 Czë na gwës chcesz òdjinstalowac skript ?
 Nie je nalazłô niżódnô starna pòmòcë dlô . Proszã sprôwdzëc, czë miono szëkóny starnë òstało wpisóné bezzmiłkòwò. Bôczënk wôlgòsc lëterów je wôżnô! Jeżle wszëtkò wëzdrzi fejn, to mòże nót je rozcygnąc lëstã przëszëkiwónëch stegnów abò ùstawiając zmienną MANPATH abò editëjąc gwësny lopk w katalogù etc.
 Ni mòże przëłączëc .
-image
 Felëjë przistãpù. Nie mòże pisac do . Disk w nëkù je mést zabezpieczony przed zapisënkã.
 Òpisënk programë brëkòwnika wm . .
 Nie mòże ùsôdzëc ScriptEngine dlô widżetu .
 Felëje przistãpù do nëkù . Sprôwdzë, czë disk w nëkù je sfòrmatowónym DOS owim diskã ë czë prawa przistãpù do ùrzãdzeniô np. dev fd są przënôléżno nastôwioné np. rwxrwxrwx.
 Na téma nie mòże bëc brëkòwónô przë metodze ùdowierzaniô .
-Sparłączenié lopków Mòduł zezwôlô na wëbiérk tegò, jaczé programë są sparłączoné z gwësnym ôrtã lopków. Ôrtë lopków są téż òznaczoné jakno ôrtë MIME MIME je angielską skrodzëną òd "Ùniwersalnégò Rozszérzeniô Internetowi Elektroniczny Pòcztë". Sparłączenié lopka zëstôwioné je z reglama determinëjącëch ôrt MIME lopka. Na przëmiôr mùster miona . png, jaczi òznôczô wszëtczé lopczi z mionama z kùniuszkã. png je sparłącozny z ôrtã MIME "image png". krótczim òpisã ôrtu MIME. Na przëmiôr òpis ôrtu MIME "image png" to zwëczajno òbrôzk PNG. ikònama brëkòwónëma przë wëskrzëniwanim lopka ò gwësnym ôrce MIME, co zezwôlô na jich prosté rozpòznanié przënômni dlô czãsto brëkòwónëch ôrtów!. lëstama programów brëkòwónëch do òtmëkaniô lopków gwësnegò ôrtu MIME. Jeżlë to dô wicy jak jedną taką programã, to ùsôdzanô je prioritetowô lësta. Niejedné ôrtë MIME nie mają co mòże wëdôwac sã kąsk dzywné sparłączonëch mùstrów mionów. W taczich przëtrôfkach KDE je w sztãdze rozpòznac ôrt lopka, badérejąc jegò zamkłosc.
+Sparłączenié lopków Mòduł zezwôlô na wëbiérk tegò, jaczé programë są sparłączoné z gwësnym ôrtã lopków. Ôrtë lopków są téż òznaczoné jakno ôrtë MIME MIME je angielską skrodzëną òd "Ùniwersalnégò Rozszérzeniô Internetowi Elektroniczny Pòcztë". Sparłączenié lopka zëstôwioné je z reglama determinëjącëch ôrt MIME lopka. Na przëmiôr mùster miona . png, jaczi òznôczô wszëtczé lopczi z mionama z kùniuszkã. png je sparłącozny z ôrtã MIME " png". krótczim òpisã ôrtu MIME. Na przëmiôr òpis ôrtu MIME " png" to zwëczajno òbrôzk PNG. ikònama brëkòwónëma przë wëskrzëniwanim lopka ò gwësnym ôrce MIME, co zezwôlô na jich prosté rozpòznanié przënômni dlô czãsto brëkòwónëch ôrtów!. lëstama programów brëkòwónëch do òtmëkaniô lopków gwësnegò ôrtu MIME. Jeżlë to dô wicy jak jedną taką programã, to ùsôdzanô je prioritetowô lësta. Niejedné ôrtë MIME nie mają co mòże wëdôwac sã kąsk dzywné sparłączonëch mùstrów mionów. W taczich przëtrôfkach KDE je w sztãdze rozpòznac ôrt lopka, badérejąc jegò zamkłosc.
 Niespòdzajny argùment .
-image
 Proszã sprôwdzëc, czë niżódnô z wpisónëch adresów ni zamëkô w se lëchich céchów abò dzëczich kôrtów, taczich jakno spacëje, gwiôzdczi czë pëtowniczi ?. Przëmiôrë pòprôwnëch adresów http mojofirma. com, . . . , mojofirma. com, localhost, http localhost Przëmiôrë lëchich adresów http mojo firma. com, http mojofirma. com, file localhost
 Niejedné starnë WWW zmieniają tekst listwë stónu ùżëwając pòlétu . defaultStatus , co czasã utrudniô wëskrzënianié wëdowiédzë ò prôwdzëwich adresach lënków. Na òptacëjô zezwôlô na kònfigùracëjã òbsłużënków taczich pòlétów.
 Rapòrt òstôł zapisóny do . info
@@ -60353,7 +60340,6 @@ Wcësni , ga włączony je ScrollLock
 Argùment równio pòlétu głosnosc mùszi miec wôrtnotã midze a .
 Ni mòże zmienic miona lopka .
 Fela przë próbie ùzwëskaniô przistãpù do , systema gôdô
-image
 Òtmëkanié lopków nie je òbsłëgiwóné przez protokól .
 Drobnotë
 Czë na gwës chcesz rëmnąc ną témã ?
@@ -60366,15 +60352,12 @@ Zgłoszë rapòrtë ò felach do .
 Brëkùnk Ùsôdzczi prawa C .
 Przëłączë sã
 Ni nalazłi mòduł .
-image
 Ni mòże czëtac lopka .
 Ni mòże zmienic miona òriginalnegò lopka . Proszã sprôwdzëc prawa.
 Ni mô brëkòwnika .
-image
 Edicëjôvectormode
-images
 Ni mòże nalezc miona lopka w .
-imageconvert
+convert
 Ni mòże nasłuchac z .
 Lëchô òbsłëgô slota Òbiekt Identifikatora Metoda Signatura .
 Zmiana miéwcë lopków nie je òbsłëgiwónô przez protokół .
@@ -60407,11 +60390,9 @@ kioclient exec url mimetype # Próbùjë òtemknąc dokùment wskazóny bez adre
 Pò prawi starnie włożonô je wëdowiédzô ò kònfigùracëji IEEE . Znaczënk apartnëch kòlumnów Miono miono pòrtu abò wãzła, numer mòże sã zmieniwac pò kòżdim resece GUID bitowô identifikatora wãzła Môl włączoné jeżlë wązeł je pòrtã IEEE twòjégò kòmpùtra IRM włączoné, jeżlë wãzeł òbsëdżiwùje izochronowi menadżer dostónków CRM włączoné, jeżlë wãzeł òbsłëdżiwùje sprôwianié cyklama ISO włączoné, jeżlë wãzeł òbsłëdżiwùje izochronowé transferë BM włączoné, jeżlë wãzeł je menadżerã szinë PM włączoné, jeżlë wãzeł je menadżerã mòcë Acc dokładnota cyklów zédżera, w skalë òd do Chùtkòsc chùtkòsc wãzła
 Filtrëje jaczi proces mô bëc wëskrzëniony wedle tuwò wpisónegò tekstu. Tekst mòże bëc w dzélu równy mionie procesu, dzejaniu czë titlu òkna. Mòże téż szëkac za mionã brëkòwnika czë numerze ID procesu. Na przëmiôr ksysWëskrzëniô procesë zamëkającé "ksys" w mionie, na przëmiôr proces "ksysguard" ë "ksysguardd". rootWëskrzëniô procesë brëkòwnika root. N. p. init Wëskrzëniô procesë z PID abò wëższim PID z .
 Nie mògã zapisac lëstë graniô .
-image
 Na programa nie je wspierónô przez systemã szlachòwaniô felów KDE. Mòżesz rãczno wësłąc rapòrt ò felë do dozérôcza tuwò . Klëkni na Zakùńczë, abë zamknąc asystenta. info report to url mail address
 Wpiszë wësłów do filtrowaniô. Wësłowa mòże definiowac jakno masczi lopków n. p. http www. przemior. com ads , abò jakno regùlarné wësłowa wstôwionë midzë céchë n. p. adBARbanner\\.
 Programa robi prawie w ti sesëji. Jes gwës tegò, że chcesz jã zamknąc?
-image
 Dostano pùsté pòdôwczi .
 C , Andi Peredri, przeniesoné do KDE przez Thomasa Nagy C Fela Winkelmolen
 Ni mòże ùsôdzëc symbòlicznegò lënka . Proszã sprôwdzëc prawa.
@@ -60419,12 +60400,11 @@ Felënk szpecjalnëch òperacrji przistspnëch dlô protokòłu .
 Nastôwi wielënã dni przez chtërné mają bëc trzëmóné lopczi w kòszu. Wszëtczé stôrszé lopczi bãdą aùtomatno rëmniãté.
 Ladowanié òbkłôdczi dlô
 Wcësni , ga włączony je NumLock
-imageconvert
+convert
 Zmiłkòwé niecałowné pòdôwczi abò felô serwerë .
 Ùdowierzony brëkòwnik je jiny òd wëmôgònegò .
 Nié mòże nalezc archiwa wëzdrzatkù .
 Nie mòże òtemnąc paczétu nót dlô widżetu .
-image
 Fela przë zrëszaniu pòlétu szëkbë .
 Programa na twòjim kòmpùtrze dôwającô przistãp do protokòłu przekôza nazôd przerwanié nieznónegò ôrtu
 Pòkôza sã wierã fela kòfigùracëji. Konqueror òstôł sparłączony z ôrtã jaczégò nie rozmie òbsłużëc.
@@ -60433,11 +60413,9 @@ Brëkùje suwôka bë zmienic głosnoc. Maksymalné pòłóżenié z lewi starn�
 Ni mòże wësłac rapòrtu ò felë. Proszã zgłoszëc felã rãczno Wicy wëdowiédze pòd http bugs. kde. org
 Miono , jaczé të wpisôł, mòże bëc wpisóné z felą, abò nie dô taczégò.
 Zamëkanié sparłączeniów nie je òbsłëgiwóné przez protokół .
-image
 Ni mòże rëmnąc dzélu lopka . Proszã sprôwdzëc prawa.
 Proszã pòdac miono szëkónégò lopkù. Alternatiwne miona nót je rozdzélëc sprzeczidnikã ";". Miono lopkù mòże miec zôstné specjalné céchë? równo jaczi céch równo jaczi cąg céchów równo jaczi céch zamkłi w kwadratowëch klamrach Przëmiôrë . kwd; . txt szëkô wszëtczé lopczi, co kùńczą sã na. kwd abò. txt st wój szëkô lopków "swój" ë "twój" Dok? ment szëkô lopczi, chtërnëch miono naczinô sã na "Dok" a kùńczë "ment", a westrzódkù mô dokładno jeden równo jaczi céch. Mój Dokùment. kwd szëkô lopkù ò dokładno taczim mionie
 tabstyle
-image
 Przëczëna Nie je nalazłi lopk pùltu .
 Chcesz na gwës włączëc ?
 Ni mòże czëtac .
@@ -60452,7 +60430,6 @@ Na przëmiôr .txt; .doc
 Òpisënk programë brëkòwnika Lynx . .
 Niejedné starnë WWW zmieniają miarã òkna brëkùjąc pòlétów . resizeBy abò . resizeTo . Na òptacëjô zezwôlô na kònfigùracëjã òbsłużënkù taczich pòlétów.
 stpWidnosc
-image
 <! DOCTYPE HTML PUBLIC " WC DTD HTML . ENhttp www. w. org TR REC html strict. dtd" > p, li {white space wrap;} Próba zakùńczeniô procesu przez przesłanié sygnału SIGTERM. Technische Informationen Sygnał SIGTERM bãdze wësłony do wëbrónegò procesu. Jeżlë nié môsz dosc prawa dlô negò dzejaniô, bãdzesz spëtóny ò parolã. Brëkùjąc programã polkit kde authorization mòżesz wëbrac brëkòwników z prawama zakùńczeniô procesu, bez mùszebnotë pòdôwaniô parolë.
 Ùniwersalny . x w
 Je mòżno ograńczëc lëczbã lopków wëskrzënianëch w Selektorze Lopków Sygnie pòdac filter, w òczénkù na spódkù, na przëmiôr . html . php, bë wëskrzënic blós lopczi HTML ë PHP w biéżnym katalogù. Selektor lopków pamiãtô slédno wpisóné filtrë. < strong >
@@ -60476,7 +60453,6 @@ Protokół nie òbsłëgùje dzejaniô . info url
 Wcësni , ga włączoné są NumLock ë CapsLock
 Wëslë nen rapòrt do .
 Twòjô serwera X nie òbsłëgùjë zmiany miarë ë òbracaniô ekranu. Proszã zaktualnic jã do wersëji . abò wëższi. Abë brëkòwac ti fùnkcëji nót je roszérzeniô X Resize And Rotate RANDR w wersëji . abò wëższi.
-image
 . xmlBARLopczi załóżków KDE . xml
 Programa na serwerze dôwającô przistãp do protokòłu przekôza nazôd bënową felã
 Nie mòże nalezc archiwùm témë ikònów .
@@ -60493,7 +60469,6 @@ Numer pòrtu pòstrzédniczącegò serwera HTTP. Domëszlnoe je to , jinszą cz�
 Pòlét, jaczégò chcesz brëkòwac, wëmògô dodôwnëch praw. Wpiszë niżi parolã brëkòwnika .
 Nowô sekwencja za ,
 Ni mòże zmienic prawa do .
-image
 Chcesz trzëmac tã parolã dlô ?
 Nalazłi zakrãcony lënk w .
 Chesz rëmnąc téż ?
@@ -60506,15 +60481,12 @@ Wëskrzënianié zamkłosców katalogów nie je òbsłëgiwóné przez protokó�
 Serwer wëmôgô , jaczi nie je przistãpny.
 Ùsôdzanié symbòlicznëch lënków nie je òbsłëgiwóné przez protokół .
 Nie mòże zatrzëmac serwerë .
-image
 Nie mòże wësztartowac ùsłëżnotë , Fela
 Wpisóny tuwò tekst bãdze brëkòwóny do wëskrzeniwaniô czasu. Tekst mòże zamëkac w se wëpisóné niżi céchë. HH Gòdzëna w gòdzënowi systemie dwie cyfrë . hH Gòdzëna w gòdzënowi systemie . PH Gòdzëna w gòdzënowi systemie dwie cyfrë. pH Gòdzëna w gòdzënowi systemie . MM Minutë dwie cyfrë . SS Sekùndë dwie cyfrë . AMPM "am" abò "pm", zanôlégò òd czasu. Pôłnie òstanié òznôczoné" pm ", a noc " am ".
 Jes të gwës, że chcesz rëmnąc témã ikònów ? To rëmnie lopczi zainstalowóné bez tã témã.
 Nie mòże pisac do lopkù . Disk w nëkù je gwësno fùl.
-image
 zamëkô w se fònt , chtëren je ju winstalowóny w twòji systemie.
 Nasëcenié
-image
 undodesc
 Nowô sekwencja za , ,
 Proszã wësłąc rapòrt ò felë na adresã http bugs. kde. org , dôwając karnie KDE wiadło ò nieòbsłëgiwóny metodze ùdowierzaniô.
@@ -60523,7 +60495,6 @@ Nieznóny protokół .
 Paléta farwówcolormap
 x zmieniono miara . x.
 U niform R esource L ocation URL, Zrównanô Adresa Dostónkù, wpisóny przez ce, zamëkô w se nieznóną metodã przistãpù do pòdónegò dostónkù, .
-image
 Môsz wëbróny òptacëjã wëskrzëniwaniô òkna na fùl ekran. jeżlë programa nie mô òptacëji przëwraceniô zwëkòwégò tribù, przińdzenie nazôd do niegò brëkùjąc mëszë nie mdze mòżlewé, nót mdze brëkòwac menu òperacëji na òknie, jaczé wëwołôsz klawiszową skrodzëną .
 Nieżdónô òdpòwiesc serwera na pòlét .
 Brëkòwónô je falszëwô identifikacëjô przezérnika .
