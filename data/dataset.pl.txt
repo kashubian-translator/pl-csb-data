@@ -13062,7 +13062,7 @@ Jeśli jest zaznaczone, Amarok odczyta wszystkie podkatalogi.
 Jeśli jest zaznaczone, katalogi będą automatycznie przeszukiwane kiedy ich zawartość będzie zmieniana, np. kiedy zostanie dodany nowy plik.
 Korzeń kolekcji
 Tytuł Title with track number track name fixed with the track number playlist column name and token for playlist layouts
-Kompozytor Cover image playlist column name and token for playlist layouts
+Kompozytor Cover playlist column name and token for playlist layouts
 Rok
 Komentarz Composer playlist column name and token for playlist layouts
 Gatunek Group length total play of group playlist column name and token for playlist layouts
@@ -14201,7 +14201,7 @@ Zadanie zostało anulowane przez użytkownika.
 Sprawdź pliki.
 Nie można znaleźć pliku wykonywalnego.
 Aby zgrać płytę Video CD należy zainstalować VcdImager w wersji.
-Możesz go znaleźć w swojej dystrybucji lub pobrać ze strony http www. vcdimager. org
+Możesz go znaleźć w swojej dystrybucji lub pobrać ze strony http www. vcdr. org
 Plik wykonywany jest zbyt stary potrzebna jest wersja lub wyższa.
 Użycie Prawa autorskie C.
 Zgrywanie.
@@ -15258,7 +15258,7 @@ http www. google. com search? q=\\\\ {} ie=UTF oe=UTF
 Google archiwum grup dyskusyjnychQuery
 http groups. google. com groups? oi=djqas q=\\\\ {}
 Google wyszukiwanie zdjęćQuery
-http images. google. com images? q=\\\\ {}
+http s. google. com s? q=\\\\ {}
 Google "Szczęśliwy traf" Query
 http www. google. pl search? q=\\\\ {} btnI=I mFeelingLuckyie=UTF oe=UTF
 Google filmyQuery
@@ -17341,12 +17341,12 @@ Dodaj nowy wzorzec dla zaznaczonego typu plików.
 Usuń wybrany wzorzec plików.
 Tutaj można wprowadzić krótki opis plików o zaznaczonym typie np "Strona HTML". Opis ten będzie wykorzystany w programach takich jak Konqueror do wyświetlenia zawartości katalogów.
 Pytaj, czy zapisać na dysk tylko w przeglądarce Konqueror
-Można tu wskazać, co zrobi menedżer plików Konqueror, kiedy kliknie się na pliku tego typu. Konqueror może wyświetlić zawartość pliku w osadzonej przeglądarce we własnym oknie lub uruchomić odrębny program. Jeśli włączysz opcję "Używaj ustawień dla grupy" wtedy Konqueror będzie się zachowywał stosownie do ustawień dla grupy, do której należy bieżący typ pliku np. grupy obrazek dla plików typu image png. Dolphin zawsze pokazuje pliki w oddzielnej przeglądarce.
+Można tu wskazać, co zrobi menedżer plików Konqueror, kiedy kliknie się na pliku tego typu. Konqueror może wyświetlić zawartość pliku w osadzonej przeglądarce we własnym oknie lub uruchomić odrębny program. Jeśli włączysz opcję "Używaj ustawień dla grupy" wtedy Konqueror będzie się zachowywał stosownie do ustawień dla grupy, do której należy bieżący typ pliku np. grupy obrazek dla plików typu png. Dolphin zawsze pokazuje pliki w oddzielnej przeglądarce.
 Osadzanie
 Dodaj nowe rozszerzenie
 Rozszerzenie
 Użyj ustawień dla grupy
-Skojarzenia plików Moduł pozwala na wybranie programów skojarzonych z danym typem plików. Typy plików są również określane jako typy MIME MIME jest angielskim skrótem od "Uniwersalnego Rozszerzenia Internetowej Poczty Elektronicznej". Skojarzenie pliku składa się z reguł determinujących typ MIME pliku. Na przykład wzorzec nazwy. png, który oznacza "wszystkie pliki z nazwami kończącymi się na. png" jest skojarzony z typem MIME "image png". krótkiego opisu typu MIME. Na przykład opis typu MIME "image png" to po prostu "Obraz PNG". ikony używanej przy wyświetlaniu pliku o danym typie MIME, co pozwala na ich łatwe rozpoznanie np. w widoku Konquerora przynajmniej dla często używanych typów. listy programów używanych do otwierania plików danego typu. Jeśli jest więcej niż jeden taki program, wtedy tworzona jest lista priorytetowa. Niektóre typy MIME nie mają co może wydawać się dziwne skojarzonych wzorców nazw. W takich przypadkach KDE jest w stanie rozpoznać typ pliku, badając jego zawartość.
+Skojarzenia plików Moduł pozwala na wybranie programów skojarzonych z danym typem plików. Typy plików są również określane jako typy MIME MIME jest angielskim skrótem od "Uniwersalnego Rozszerzenia Internetowej Poczty Elektronicznej". Skojarzenie pliku składa się z reguł determinujących typ MIME pliku. Na przykład wzorzec nazwy. png, który oznacza "wszystkie pliki z nazwami kończącymi się na. png" jest skojarzony z typem MIME " png". krótkiego opisu typu MIME. Na przykład opis typu MIME " png" to po prostu "Obraz PNG". ikony używanej przy wyświetlaniu pliku o danym typie MIME, co pozwala na ich łatwe rozpoznanie np. w widoku Konquerora przynajmniej dla często używanych typów. listy programów używanych do otwierania plików danego typu. Jeśli jest więcej niż jeden taki program, wtedy tworzona jest lista priorytetowa. Niektóre typy MIME nie mają co może wydawać się dziwne skojarzonych wzorców nazw. W takich przypadkach KDE jest w stanie rozpoznać typ pliku, badając jego zawartość.
 Znajdź typ pliku lub wzorzec nazwy pliku
 Wprowadź część wzorca nazwy plików. Na liście pojawią się tylko typy plików, które do niego pasują. Można również wpisać nazwę typu pliku, tak jak jest ona zentowana na liście.
 Znane typy
@@ -17387,7 +17387,7 @@ Wybierz usługę
 Grupa
 Wybierz kategorię, do której nowy typ pliku ma zostać dodany.
 Nazwa typu
-Wpisz nazwę typu pliku. Na przykład, jeśli wybrano kategorię "image" i wpisze się tu "custom", to zostanie utworzony typ pliku "image custom". NAME OF TRANSLATORS
+Wpisz nazwę typu pliku. Na przykład, jeśli wybrano kategorię i wpisze się tu "custom", to zostanie utworzony typ pliku " custom". NAME OF TRANSLATORS
 Michał RudolfEMAIL OF TRANSLATORS
 mrudolf kdewebdev. org
 KHtmlIndex
@@ -17402,8 +17402,8 @@ Jacek StolarczykEMAIL OF TRANSLATORS
 jstolarz kde. org
 Nastąpi nadpisanie lewego obrazka przez prawy.
 Ten obrazek nie jest przechowywany na lokalnym komputerze. Kliknij na nazwie, aby go wczytać.
-Nie można wczytać obrazkaThe color depth of an image
-Głębia koloru The dimensions of an image
+Nie można wczytać obrazkaThe color depth of an
+Głębia koloru The dimensions of an
 Rozmiar x
 Kalibracja
 Dalej
@@ -19269,10 +19269,10 @@ Menedżer logowania pokaże wszystkich zaznaczonych użytkowników. Pozycje ozna
 Wyłączeni użytkownicy
 Menedżer logowania pokaże wszystkich niezaznaczonych użytkowników. Pozycje oznaczone przez to grupy użytkowników zaznaczenie grupy jest równoważne zaznaczeniu wszystkich użytkowników z grupy. group source for user faces
 Obrazki użytkowników
-Tu można wybrać, skąd KDM pobiera obrazki rezentujące poszczególnych użytkowników. "Globalne" odpowiada katalogowi globalnemu są to obrazki do wybrania poniżej. "Indywidualne" oznacza, że KDM powinien czytać obrazek z pliku. face. icon w katalogu użytkownika. Pozostałe dwie opcje definiują kolejność użycia, jeżeli dostępne są oba źródła. option radio image source
-Systemowe option radio image source
-Systemowe, indywidualne option radio image source
-Indywidualne, systemowe option radio image source
+Tu można wybrać, skąd KDM pobiera obrazki rezentujące poszczególnych użytkowników. "Globalne" odpowiada katalogowi globalnemu są to obrazki do wybrania poniżej. "Indywidualne" oznacza, że KDM powinien czytać obrazek z pliku. face. icon w katalogu użytkownika. Pozostałe dwie opcje definiują kolejność użycia, jeżeli dostępne są oba źródła. option radio source
+Systemowe option radio source
+Systemowe, indywidualne option radio source
+Indywidualne, systemowe option radio source
 Indywidualne group user face assignments
 Obrazki użytkowników
 Użytkownik, do którego należy obrazek.
@@ -28920,8 +28920,8 @@ Przejdź do pierwszej strony
 Przejdź do aktualnej strony
 Przejdź do strony
 Odwiedź witrynę sklepu
-Zapisz komiks jako option check Context menu of comic image
-Faktyczny rozmiar option check Context menu of comic image
+Zapisz komiks jako option check Context menu of comic
+Faktyczny rozmiar option check Context menu of comic
 Zapisz bieżącą pozycję
 Odwiedź witrynę komiksuan abbrevation for
 Naciśnij przycisk "Pobierz nowe komiksy", aby zainstalować komiksy.
@@ -31180,7 +31180,7 @@ PlikMatch Windows Explorer
 Katalog plikówAll other platforms
 KatalogMac OS X Finder
 AliasAll other platforms
-NieznanyTitle string for images
+NieznanyTitle string for s
 Uaktywnia główne okno programuQSoftKeyManager
 Wybierz
 Spacja
@@ -31409,8 +31409,8 @@ KonturWriting direction context sub menu
 KierunekText direction context sub menu
 DomyślnieLeft to Right
 Prawa do lewejInspect Element
-InspekcjaLabel for only in menu that appears when clicking on the search field image, when no searches have been performed
-Brak ostatnich wyszukiwańlabel for first in the menu that appears when clicking on the search field image, used as embedded menu
+InspekcjaLabel for only in menu that appears when clicking on the search field , when no searches have been performed
+Brak ostatnich wyszukiwańlabel for first in the menu that appears when clicking on the search field , used as embedded menu
 Ostatnie wyszukiwaniamenu in Recent Searches menu that empties menu s contents
 x pikseli controller status message when the media is loading
 Wczytywanie controller status message when watching a live broadcast
@@ -60174,8 +60174,7 @@ Zakres, w jakim różne rynki są wolne oraz zasady określające własność pr
 Większość istniejących gospodarek kapitalistycznych to gospodarki mieszane, które łączą elementy wolnego rynku z interwencją państwa i w niektórych przypadkach planowaniem gospodarczym.
 Błąd podczas pobierania raportu o błędzie . Proszę poczekać chwilę i spróbować ponownie. info
 Rozszerzenie Composite zostało wyłączone przez inny program. Możesz wznowić je kombinacją klawiszy .
-Dopasuj płótno do warstwimage
-Indeksowanyimageconvert
+Indeksowanyconvert
 Brak dostępu do stacji . Stacja jest nadal zajęta. Poczekaj, aż zakończy pracę i spróbuj ponownie.
 p, li {white space wrap;} Planista wsadowe Od Linuksa . . . Ta polityka jest podobna do zwykłej, z tym że powoduje, że planista zakłada duże wykorzystanie procesora przez proces. W związku z tym zastosuje niewielką karę, która spowoduje nieco gorsze traktowanie takiego procesu. Ta polityka jest użyteczna dla grup nieinteraktywnych zadań, które jednak nie chcą zmniejszenia priorytetu wartości nice, oraz dla zadań, które potrzebują deterministycznego działania planisty bez interaktywności powodującej dodatkowe przełączenia między zadaniami wchodzącymi w skład grupy.
 Nie możnauruchomić usługi .
@@ -60191,7 +60190,6 @@ Nie można wykonać polecenia .
 <span>Firefox<span> na Androida
 Wystąpił błąd podczas odczytu modułu . Komunikat o błędzie
 Nie można znaleźć archiwum z motywem KDM .
-Obróć o ° w lewoimage
 Nie można określić typu źródła .
 Program wykonuje zadań w wątkach. Każde zadanie czeka losową liczbę milisekund między a .
 Kamienie Pozycja , ,
@@ -60231,8 +60229,6 @@ Brak dostępu do . Najprawdopodobniej brak dysku w stacji
 błąd parsowania w wierszu , kolumnie
 Pomoc kontekstowahelp
 Wprowadzono nieprawidłowy adres URL . Kończenie działania.
-Odbija obraz poziomoimage
-Skonfiguruj siatkęimage
 Proszę wybrać poprawny katalog budowania khtml .
 Błąd podczas wczytywania .
 Edytor zaznaczeniadialogs
@@ -60241,21 +60237,18 @@ Nie można pobrać .
 Nie można odczytać informacji o drukarce .
 Nie można sprawdzić tożsamości zdalnego komputera . Odcisk palca klucza tego komputera to Zanim się połączysz, powinieneś potwierdzić u administratora tego serwera, że odcisk palca jest prawidłowy. Czy chcesz zaakceptować klucz komputera i połączyć się mimo to?
 Nie można otworzyć pliku .
-Odcienie szarościimageconvert
+Odcienie szarościconvert
 Nie można odczytać informacji o klasie .
 Kombinacja klawiszy została przypisana globalnemu działaniu w . Czy przypisać ją zamiast tego aktualnemu działaniu?
-Tworzy nowy widok dla bieżącego obrazuimages
 ECMA Edition mniej więcej Javascript .
 Nie znaleziono , proszę zainstalować odpowiedni pakiet
 Włączyć następujący kanał oprogramowania ?
 Zastąpić przez ?
-Wyświetla pomoc wybranego obiektu interfejsu użytkownikaimage
 Wygrałeś! Usunąłeś nawet ostatni kamień, brawo! Twój wynik to .
 Ten program nie jest obsługiwany przez system śledzenia błędów KDE. Kliknij Zakończ, aby wysłać raport o błędzie tego programu jego opiekunowi. Możesz też ręcznie sporządzić raport tu . info
 Wciśnij , gdy włączone są NumLock, CapsLock i ScrollLock
 Serwer, choć podłączony do Internetu, może nie być udostępniać żądanejusługi .
 Nie można otworzyć biblioteki .
-Obróć o °image
 Nie można połączyć się z serwerem .
 Wystąpił nieznany błąd podczas kopiowania pliku do . Proszę spróbować ponownie.
 Nie można usunąć katalogu .
@@ -60277,7 +60270,6 @@ Zmiana atrybutów plików nie jest obsługiwana przez protokół .
 Próba usunięcia podanego katalogu, , nie powiodła się.
 Moduł do wczytywania obrazów nie eksportuje właściwego interfejsu. Być może pochodzi on z innej wersji biblioteki gdkpixbuf.
 Nie można utworzyć katalogu .
-Tworzy nowy obrazimage
 Wciśnij , gdy włączony jest CapsLock
 zawiera czcionkę , która jest już zainstalowana.
 Proszę podać hasło do klucza x , należącego do lt; gt;
@@ -60290,9 +60282,7 @@ Błędny URL .
 Niemożliwe otwarcie pliku , działanie programu zostanie przerwane.
 To jest ikona skojarzona z wybranym typem pliku. Zmiana ikony wymaga biblioteki shared mime info w wersji co najmniej . .
 Edytor paletydialogs
-Nowyimage
-Składoweimage
-Wyświetla informacje o tym obrazieimageconvert
+Wyświetla informacje o tym obrazieconvert
 Nie można uruchomić serwera .
 Pakiet wymaga co najmniej wersji , ale dostępna jest tylko
 Nie można usunąć pliku .
@@ -60310,20 +60300,17 @@ Na pewno usunąć ? Usunie to tylko grupę, nie same czcionki.
 Poziom kontrastu
 Niektóre strony WWW uaktywniają okna przy użyciu polecenia . focus . Zwykle powoduje to przerwanie aktualnego działania wykonywanego przez użytkownika. Ta opcja pozwala na konfigurację obsługi takich poleceń.
 Cascading Style Sheets CSS , częściowo CSS
-Właściwości obrazuimage
 Nie można odnaleźć pliku wykonywalnego .
 Czy na pewno odinstalować skrypt ?
 Nie znaleziono strony podręcznika dla . Proszę sprawdzić, czy nazwa poszukiwanej strony została wpisana poprawnie. Wielkość liter też ma znaczenie! Jeśli wszystko wygląda poprawnie, być może trzeba rozszerzyć listę przeszukiwanych ścieżek albo ustawiając zmienną środowiskową MANPATH, albo edytując odpowiedni plik w katalogu etc.
 Nie można dołączyć .
-Obraca obraz o stopni w prawoimage
 Brak dostępu. Nie można pisać do . Dyskietka w stacji jest prawdopodobnie zabezpieczona przed zapisem.
 Opis przeglądarki użytkownika wm . .
 Nie można uruchomić modułu obsługi skryptów ScriptEngine dla elementu interfejsu . Package file, name of the widget
 Brak dostępu do stacji . Sprawdź, czy dyskietka w stacji jest sformatowaną dyskietką DOS ową i czy prawa dostępu do urządzenia np. dev fd są ustawione prawidłowo np. rwxrwxrwx.
 Ten motyw nie może być używany przy metodzie uwierzytelniania .
-Skojarzenia plików Moduł pozwala na wybranie programów skojarzonych z danym typem plików. Typy plików są również określane jako typy MIME MIME jest angielskim skrótem od "Uniwersalnego Rozszerzenia Internetowej Poczty Elektronicznej". Skojarzenie pliku składa się z reguł determinujących typ MIME pliku. Na przykład wzorzec nazwy . png, który oznacza "wszystkie pliki z nazwami kończącymi się na. png" jest skojarzony z typem MIME "image png". krótkiego opisu typu MIME. Na przykład opis typu MIME "image png" to po prostu "Obraz PNG". ikony używanej przy wyświetlaniu pliku o danym typie MIME, co pozwala na ich łatwe rozpoznanie np. w widoku Konquerora przynajmniej dla często używanych typów. listy programów używanych do otwierania plików danego typu. Jeśli jest więcej niż jeden taki program, wtedy tworzona jest lista priorytetowa. Niektóre typy MIME nie mają co może wydawać się dziwne skojarzonych wzorców nazw. W takich przypadkach KDE jest w stanie rozpoznać typ pliku, badając jego zawartość.
+Skojarzenia plików Moduł pozwala na wybranie programów skojarzonych z danym typem plików. Typy plików są również określane jako typy MIME MIME jest angielskim skrótem od "Uniwersalnego Rozszerzenia Internetowej Poczty Elektronicznej". Skojarzenie pliku składa się z reguł determinujących typ MIME pliku. Na przykład wzorzec nazwy . png, który oznacza "wszystkie pliki z nazwami kończącymi się na. png" jest skojarzony z typem MIME " png". krótkiego opisu typu MIME. Na przykład opis typu MIME " png" to po prostu "Obraz PNG". ikony używanej przy wyświetlaniu pliku o danym typie MIME, co pozwala na ich łatwe rozpoznanie np. w widoku Konquerora przynajmniej dla często używanych typów. listy programów używanych do otwierania plików danego typu. Jeśli jest więcej niż jeden taki program, wtedy tworzona jest lista priorytetowa. Niektóre typy MIME nie mają co może wydawać się dziwne skojarzonych wzorców nazw. W takich przypadkach KDE jest w stanie rozpoznać typ pliku, badając jego zawartość.
 Niespodziewany argument .
-Skaluj obrazimage
 Proszę sprawdzić, czy żaden z podanych adresów nie zawiera nieprawidłowych znaków lub masek, takich jak spacje, gwiazdki czy znaki zapytania ?. Przykłady poprawnych adresów http mojafirma. com, . . . , mojafirma. com, localhost, http localhost Przykłady błędnych adresów http moja firma. com, http mojafirma. com, file localhost
 Niektóre strony WWW modyfikują tekst paska stanu przy użyciu polecenia . defaultStatus , co czasem utrudnia wyświetlanie informacji o prawdziwych adresach odnośników. Ta opcja pozwala na konfigurację obsługi takich poleceń.
 Raport zapisany w pliku . info
@@ -60353,7 +60340,6 @@ Wciśnij , gdy włączony jest ScrollLock
 Argument "level" polecenia "volume" musi być wartością pomiędzy a .
 Nie można zmienić nazwy pliku .
 Błąd podczas próby uzyskania dostępu do , system zgłosił
-Konwertuje obraz do trybu koloru indeksowanegoimage
 Otwieranie plików nie jest obsługiwane przez protokół .
 Szczegóły
 Czy na pewno chcesz usunąć motyw ?
@@ -60366,15 +60352,12 @@ Proszę zgłaszać błędy do .
 Użycie Prawa autorskie C .
 Zaangażuj się
 Nie znaleziono modułu .
-Odwraca obraz do góry nogamiimage
 Nie można czytać pliku .
 Nie można zmienić nazwy oryginalnego pliku . Proszę sprawdzić uprawnienia.
 Nie ma użytkownika .
-Dopasuj płótno do zaznaczeniaimage
 Modyfikacjavectormode
-Wysuwa widoki bieżącego obrazuimages
 Nie można znaleźć nazwy pliku w .
-Konwertuje obraz do odcieni szarościimageconvert
+Konwertuje obraz do odcieni szarościconvert
 Nie można nasłuchiwać z .
 Błędna obsługa slota Obiekt Identyfikator Metoda Podpis .
 Zmiana właściciela plików nie jest obsługiwana przez protokół .
@@ -60407,11 +60390,9 @@ kioclient exec url typMIME # Próbuje otworzyć dokument wskazywany przez url w 
 Po prawej stronie umieszczone są informacje na temat konfiguracji IEEE . Znaczenie poszczególnych kolumn Nazwa nazwa portu lub węzła, numer może się zmienić po każdym resecie GUID bitowy identyfikator węzła Lokalny zaznaczone, jeśli węzeł to port IEEE tego komputera IRM zaznaczone, jeśli węzeł obsługuje izochroniczny menedżer zasobów CRM włączone, jeśli węzeł obsługuje zarządzanie cyklami BM włączone, jeśli węzeł obsługuje zarządzanie magistralą PM włączone, jeśli węzeł obsługuje zarządzanie energią Dokładność dokładność zegara węzła, od do Szybkość szybkość węzła
 Filtrowanie listy procesów, które są pokazywane, za pomocą podanego tu tekstu. Tekst może być ciągiem zawierającym fragment nazwy procesu, polecenia lub nazwy okna. Może być także nazwą użytkownika lub identyfikatorem procesu. Na przykład ksysPokaż proces mający w nazwie "ksys", na przykład procesy "ksysguard" i "ksysguardd". rootPokaż procesy, których właścicielem jest administrator root. Na przykład init Pokaż procesy z identyfikatorem procesu lub identyfikatorem rodzica .
 Nie można zapisać listy .
-Zmienia wymiary obrazu, aby pasowały do rozmiarów zaznaczeniaimage
 Możesz ręcznie sporządzić raport o błędzie i wysłać go do opiekuna programu tu . Kliknij Zakończ, aby zamknąć asystenta. info report to url mail address
 Podaj wyrażenie do filtrowania. Wyrażenia można definiować albo jako maski plików np. http www. przyklad. com ads , albo jako wyrażenie regularne otoczone znakami np. adBARbanner\\.
 W tej sesji obecnie działa program . Na pewno zamknąć tę sesję?
-Konfiguruje siatkę dla tego obrazuimage
 Otrzymano puste dane .
 C , Andi Peredri, przeniesione do KDE przez Thomasa Nagy C Fela Winkelmolen
 Nie można utworzyć odnośnika symbolicznego . Proszę sprawdzić uprawnienia.
@@ -60419,12 +60400,11 @@ Brak specjalnych operacji dostępnych dla protokołu .
 Ustawienie liczby dni, przez który to czas pliki pozostają w koszu. Wszystkie starsze pliki zostaną automatycznie usunięte.
 Anulowano pobieranie okładki dla .
 Wciśnij , gdy włączony jest NumLock
-Konwertuje obraz do przestrzeni kolorów RGBimageconvert
+Konwertuje obraz do przestrzeni kolorów RGBconvert
 Nieprawidłowe niekompletne dane lub błąd serwera .
 Uwierzytelniony użytkownik jest inny od wymaganego .
 Nie można znaleźć archiwum motywu .
 Nie można otworzyć pakietu wymaganego przez element interfejsu . is the name of the applet
-Wymiary płótnaimage
 Błąd podczas wykonywania polecenia wyszukiwania .
 Program na Twoim komputerze, umożliwiający dostęp do protokołu , zwrócił przerwanie nieznanego typu .
 Najprawdopodobniej wystąpił błąd konfiguracji. Konqueror został skojarzony z typem , którego nie umie obsłużyć.
@@ -60433,11 +60413,9 @@ Użyj suwaka, aby zmienić głośność. Pozycja maksymalna po lewej stronie to 
 Nie można wysłać raportu o błędzie. Prosimy o ręczne zgłoszenie błędu Instrukcje jak to zrobić znajdują się na stronie http bugs. kde. org .
 Podana nazwa, , może być błędnie wpisana.
 Zamykanie połączeń nie jest obsługiwane przez protokół .
-Trybimage
 Nie można usunąć częściowego pliku . Proszę sprawdzić uprawnienia.
 Proszę podać nazwę szukanego pliku. Alternatywne nazwy należy rozdzielić średnikiem ";". Nazwa pliku może zawierać następujące znaki specjalne? dowolny znak dowolny ciąg znaków dowolny znak zawarty w nawiasach kwadratowych Przykłady . kwd; . txt wyszukuje wszystkie pliki kończące się na. kwd lub. txt st wój wyszukuje pliki "swój" i "twój" Do? ument wyszukuje pliki, których nazwa zaczyna się "Do" i kończy "ument", a w środku ma dokładnie jeden dowolny znak. Mój. kwd wyszukuje plik o podanej nazwie
 Bieżący stantabstyle
-Zmienia wymiary obrazu, aby pasowały do wszystkich warstwimage
 Powód Nie znaleziono pliku pulpitu .
 Na pewno włączyć ?
 Nie można czytać .
@@ -60452,7 +60430,6 @@ Na przykład .txt; .doc
 Opis przeglądarki użytkownika Lynx . .
 Niektóre strony WWW zmieniają rozmiar okna przy użyciu poleceń . resizeBy lub . resizeTo . Ta opcja pozwala na konfigurację obsługi takich poleceń.
 stpJasność
-Dostosowuje rozdzielczość drukowaniaimage
 <! DOCTYPE HTML PUBLIC " WC DTD HTML . ENhttp www. w. org TR REC html strict. dtd" > p, li {white space wrap;} Próba zatrzymania wybranego procesu przez wysłanie mu sygnału SIGTERM. Informacja techniczna Do podanego procesu jest wysyłany sygnał SIGTERM. Jeśli Twoje uprawnienia są niewystarczające, domyślnie następuje prośba o hasło. Za pomocą programu polkit kde authorization można nadać wybranym lub wszystkim użytkownikom prawa do zatrzymywania dowolnych procesów, bez potrzeby podawania hasła.
 Uniwersalny . x w
 Można ograniczyć ilość plików wyświetlanych w Selektorze Plików Wystarczy podać filtr, w okienku na dole, na przykład . html . php, by wyświetlić jedynie pliki HTML i PHP w bieżącym katalogu. Selektor plików pamięta ostatnio wpisywane filtry. < strong >
@@ -60476,7 +60453,6 @@ Protokół nie obsługuje działania . info url
 Wciśnij , gdy włączone są NumLock i CapsLock
 Wyślij ten raport do .
 Twój X serwer nie obsługuje zmiany rozmiaru i obracania ekranu. Proszę uaktualnić go do wersji . lub nowszej. Aby używać tej funkcji, potrzebujesz rozszerzenia X Resize, Rotate, and Reflect RANDR w wersji . lub nowszej.
-Połącz widoczne warstwyimage
 . xmlBARPliki zakładek KDE . xml
 Program na serwerze, zapewniający dostęp do protokołu , zwrócił błąd wewnętrzny .
 Nie można znaleźć motywu ikon .
@@ -60493,7 +60469,6 @@ Numer portu serwera pośredniczącego HTTP. Domyślnie jest to , inną częstą 
 Polecenie, które chcesz wykonać, wymaga dodatkowych uprawnień. Wpisz poniżej hasło użytkownika .
 Następna sekwencja za ,
 Nie można zmienić praw do .
-Zmienia wymiary obrazuimage
 Czy zapamiętać to hasło dla ?
 Wykryto zapętlony odnośnik w .
 Czy chcesz usunąć też ?
@@ -60506,15 +60481,12 @@ Wyświetlanie zawartości katalogów nie jest obsługiwane przez protokół .
 Serwer wymaga , który nie jest dostępny.
 Tworzenie dowiązań symbolicznych nie jest obsługiwane przez protokół .
 Nie można zatrzymać serwera .
-Kadruje obraz do wybranego zaznaczeniaimage
 Nie można uruchomić usługi . Błąd
 Wpisany tu tekst będzie użyty do wyświetlania czasu. Tekst może zawierać poniższe symbole HH Godzina w systemie godzinnym dwie cyfry . hH Godzina w systemie godzinnym . PH Godzina w systemie godzinnym dwie cyfry. pH Godzina w systemie godzinnym . MM Minuty dwie cyfry . SS Sekundy dwie cyfry . AMPM "am" lub "pm", w zależności od czasu. Południe zostanie oznaczone "pm", a północ "am".
 Na pewno usunąć motyw ikon ? Usunięte zostaną wszystkie pliki instalowane przez ten motyw.
 Nie można pisać do pliku . Dyskietka w stacji jest prawdopodobnie zapełniona.
-Dostosowuje wymiary obrazuimage
 Plik zawiera czcionkę , która jest już zainstalowana.
 Nasycenie
-Tworzy duplikat tego obrazuimage
 Odbicie pionoweundodesc
 Następna sekwencja za , ,
 Proszę wysłać raport o błędzie na adres http bugs. kde. org , informując Zespół KDE o nieobsługiwanej metodzie uwierzytelnienia.
@@ -60523,7 +60495,6 @@ Nieznany protokół .
 Menu palety kolorówcolormap
 x zmieniony rozmiar . x.
 U niform R esource L ocation URL, Ujednolicony Adres Zasobu, podany przez Ciebie, zawiera nieznaną metodę dostępu do podanego zasobu, .
-Rozmiar wydrukuimage
 Wybrałeś opcję wyświetlania okna na cały ekran. Jeśli program sam nie ma opcji powrotu do zwykłego trybu, powrót do niego przy użyciu myszy będzie niemożliwy. Jedyna możliwość to użycie menu operacji na oknie, wywoływanego skrótem klawiszowym .
 Niespodziewana odpowiedź serwera na komendę .
 Używana jest fałszywa identyfikacja przeglądarki .
