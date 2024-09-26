@@ -1,7 +1,7 @@
 # Setup
 `pip install -r requirements.txt`
 # Prepare Data
-`python pl-csb-data`
+`python pl_csb_data`
 # Run Tests
 `pytest test`
 
