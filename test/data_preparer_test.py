@@ -18,7 +18,7 @@ def create_temp_file_fixture(tmp_path: Path) -> Callable[[str, str, str], Path]:
 
 @pytest.fixture
 def mock_logger(mocker):
-    return mocker.MagicMock(spec=Logger)
+    return mocker.create_autospec(Logger, instance=True)
 
 @pytest.mark.parametrize(
     "content, expected",
@@ -47,25 +47,39 @@ def test_read_text_file_returns_true_not_match(create_temp_file, mock_logger) ->
     result_expected = ["line1", "line2", "line3"]
     assert result != result_expected
     
-def test_read_text_file_raises_file_not_found_exception() -> None:
+def test_read_text_file_raises_file_not_found_exception(mock_logger) -> None:
     preparer = DataPreparer(logger=mock_logger)
-    with pytest.raises(FileNotFoundError):
-        preparer._DataPreparer__read_text_file("non_existent_file.txt")
+
+    result = preparer._DataPreparer__read_text_file("non_existent_file.txt")
+
+    mock_logger.error.assert_called_with("File not found: [Errno 2] No such file or directory: 'non_existent_file.txt'")
+    assert result is None
         
-def test_read_text_file_raises_unicode_decode_error(create_temp_file) -> None:
+def test_read_text_file_raises_unicode_decode_error(create_temp_file, mock_logger) -> None:
     filename = "test_file.txt"
     content = "línea1\nlínea2\nlínea3\n"
     file_path = create_temp_file(filename, content, "latin-1")
     preparer = DataPreparer(logger=mock_logger)
+
+    result = preparer._DataPreparer__read_text_file(file_path)
     
-    with pytest.raises(UnicodeDecodeError):
-        preparer._DataPreparer__read_text_file(file_path)
+    mock_logger.error.assert_called_with(f"Unicode decode error while reading file {file_path}: 'utf-8' codec can't decode byte 0xed in position 1: invalid continuation byte")
+    assert result is None
+
+def test_read_text_file_logs_other_exception(mocker: Any, mock_logger) -> None:
+    mock_open = mocker.patch("builtins.open", side_effect=IOError("Unexpected error"))
+    preparer = DataPreparer(logger=mock_logger)
+
+    result = preparer._DataPreparer__read_text_file("dummy_file.txt")
+
+    mock_logger.error.assert_called_with("Failed to open file dummy_file.txt: Unexpected error")
+    assert result is None
         
-def test_prepare_translation_dataset_returns_true_dataframe_match(mocker : Any) -> None:
+def test_prepare_translation_dataset_returns_true_dataframe_match(mocker: Any, mock_logger) -> None:
     mock_polish_train = ["Polish sentence 1", "Polish sentence 2"]
     mock_kashubian_train = ["Kashubian sentence 1", "Kashubian sentence 2"]
 
-    mocker.patch("pl_csb_data.data_preparer.DataPreparer._DataPreparer__read_text_file", side_effect=[mock_kashubian_train, mock_polish_train])
+    mocker.patch("pl_csb_data.data_preparer.DataPreparer._DataPreparer__read_text_file", side_effect=[mock_polish_train, mock_kashubian_train])
 
     preparer = DataPreparer(logger=mock_logger)
     df = preparer._DataPreparer__prepare_translation_dataset("dummy_source_path", "dummy_target_path", "pl", "csb")

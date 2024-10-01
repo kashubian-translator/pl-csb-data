@@ -43,7 +43,7 @@ def mock_moses_punct_normalizer(mocker):
 
 @pytest.fixture
 def mock_logger(mocker):
-    return mocker.MagicMock(spec=Logger)
+    return mocker.create_autospec(Logger, instance=True)
 
 @pytest.mark.parametrize(
     "input_data, csb_expected_unknown_tokens, pl_expected_unknown_tokens",
@@ -71,8 +71,8 @@ def test_check_for_unknown_tokens_returns_true_found_tokens(mock_nllb_tokenizer,
     normalizer._DataNormalizer__check_for_unknown_tokens(mock_nllb_tokenizer, train_df)
     output = capsys.readouterr().out.rstrip()
     
-    assert f"Found {csb_expected_unknown_tokens} unknown tokens in the CSB data" in output
-    assert f"Found {pl_expected_unknown_tokens} unknown tokens in the PL data" in output
+    mock_logger.info.assert_any_call(f"Found {csb_expected_unknown_tokens} unknown tokens in the CSB data")
+    mock_logger.info.assert_any_call(f"Found {pl_expected_unknown_tokens} unknown tokens in the PL data")
 
 @pytest.mark.parametrize(
     "input_data, column_name, expected_output_data",

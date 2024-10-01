@@ -10,10 +10,16 @@ class DataPreparer:
     def __init__(self, logger: Logger):
         self.__logger = logger
 
-    def __read_text_file(self, filename: str) -> Optional[list]: 
+    def __read_text_file(self, filename: str) -> Optional[list]:
         try:
             with open(filename, "r", encoding="utf-8") as file:
                 return [line.strip("\n") for line in file.readlines()]
+        except FileNotFoundError as e:
+            self.__logger.error(f"File not found: {e}")
+            return None
+        except UnicodeDecodeError as e:
+            self.__logger.error(f"Unicode decode error while reading file {filename}: {e}")
+            return None
         except Exception as e:
             self.__logger.error(f"Failed to open file {filename}: {e}")
             return None
