@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: "Checkout source code of the repository"
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: "Setup the environment"
         run: pip install -r requirements.txt
