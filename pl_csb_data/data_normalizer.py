@@ -1,8 +1,7 @@
+import re
 from logging import Logger
 
-import re
 import pandas as pd
-
 from tqdm.auto import tqdm
 from transformers import NllbTokenizer
 from sacremoses import MosesPunctNormalizer
@@ -18,7 +17,7 @@ class DataNormalizer:
         try:
             unknown_tokens = [text for text in tqdm(train_df.csb_Latn) if tokenizer.unk_token_id in tokenizer(str(text)).input_ids]
             self.__logger.info(f"Found {len(unknown_tokens)} unknown tokens in the CSB data")
-            
+
             unknown_tokens = [text for text in tqdm(train_df.pol_Latn) if tokenizer.unk_token_id in tokenizer(str(text)).input_ids]
             self.__logger.info(f"Found {len(unknown_tokens)} unknown tokens in the PL data")
         except Exception as e:
@@ -53,16 +52,16 @@ class DataNormalizer:
         try:
             tokenizer = NllbTokenizer.from_pretrained("facebook/nllb-200-distilled-600M", additional_special_tokens=["csb_Latn"])
             train_df = pd.read_csv(input_path, sep='\t', index_col=0)
-            
+
             self.__check_for_unknown_tokens(tokenizer, train_df)
             self.__logger.info("Normalizing translation dataset")
-            
+
             train_df = self.__normalize_translation_dataset(train_df)
-            
+
             self.__logger.info("Removing rows with unknown tokens")
             train_df = self.__remove_rows_with_unknown_tokens(tokenizer, train_df, train_df[train_df.columns[0]])
             train_df = self.__remove_rows_with_unknown_tokens(tokenizer, train_df, train_df[train_df.columns[1]])
-            
+
             self.__check_for_unknown_tokens(tokenizer, train_df)
             train_df.to_csv(output_path, sep="\t")
         except Exception as e:

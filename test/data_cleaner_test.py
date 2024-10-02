@@ -5,6 +5,7 @@ from unittest.mock import mock_open, MagicMock
 
 from pl_csb_data.data_cleaner import remove_matching_phrases, remove_duplicated_phrases
 
+
 @pytest.fixture
 def mock_open_files(mocker: Any) -> Callable[[str, str], Tuple[MagicMock, MagicMock, MagicMock]]:
     def setup_mocks(polish_content: str, kashubian_content: str) -> Tuple[MagicMock, MagicMock, MagicMock]:
@@ -24,7 +25,8 @@ def mock_open_files(mocker: Any) -> Callable[[str, str], Tuple[MagicMock, MagicM
 
         return mock_temp_polish_file, mock_temp_kashubian_file, mock_os_replace
 
-    return setup_mocks    
+    return setup_mocks
+
 
 @pytest.mark.parametrize(
     "polish_content, kashubian_content, search_phrases, search_in, expected_polish_result, expected_kashubian_result",
@@ -104,7 +106,7 @@ def test_remove_matching_phrases_returns_true_file_content_match(mock_open_files
             mock_temp_polish_file().write.assert_any_call(line + "\n")
     else:
         mock_temp_polish_file().write.assert_not_called()
-    
+
     if expected_kashubian_result:
         for line in expected_kashubian_result.splitlines():
             mock_temp_kashubian_file().write.assert_any_call(line + "\n")
@@ -113,10 +115,12 @@ def test_remove_matching_phrases_returns_true_file_content_match(mock_open_files
 
     mock_os_replace.assert_any_call("mock_polish_path.txt.tmp", "mock_polish_path.txt")
     mock_os_replace.assert_any_call("mock_kashubian_path.txt.tmp", "mock_kashubian_path.txt")
-    
+
+
 def test_remove_matching_phrases_raises_value_error_exception():
     with pytest.raises(ValueError, match="search_in parameter must be 'polish', 'kashubian', or 'both'"):
         remove_matching_phrases("mock_polish_path.txt", "mock_kashubian_path.txt", ["coś"], search_in="invalid")
+
 
 @pytest.mark.parametrize(
     "polish_content, kashubian_content, expected_polish_result, expected_kashubian_result",

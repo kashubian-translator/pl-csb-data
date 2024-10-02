@@ -18,13 +18,13 @@ def set_up_logger(name: str, logger_level: Optional[str] = None) -> logging.Logg
 
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    
+
     formatter = logging.Formatter("%(asctime)s [%(process)s] [%(levelname)s] - %(message)s")
-    
+
     handler = logging.StreamHandler()
     handler.setLevel(level)
     handler.setFormatter(formatter)
-    
+
     if not logger.hasHandlers():
         logger.addHandler(handler)
 
