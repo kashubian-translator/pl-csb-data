@@ -5,7 +5,8 @@ import pandas as pd
 from transformers import NllbTokenizer
 from unittest.mock import MagicMock
 
-from pl_csb_data.data_normalizer import check_for_unknown_tokens, remove_rows_with_unknown_tokens, normalize_translation_dataset
+from logging import Logger
+from pl_csb_data.data_normalizer import DataNormalizer
 
 @pytest.fixture
 def mock_nllb_tokenizer(mocker : Any) -> MagicMock:
@@ -40,6 +41,10 @@ def mock_moses_punct_normalizer(mocker):
 
     return mock_instance
 
+@pytest.fixture
+def mock_logger(mocker):
+    return mocker.create_autospec(Logger, instance=True)
+
 @pytest.mark.parametrize(
     "input_data, csb_expected_unknown_tokens, pl_expected_unknown_tokens",
     [
@@ -60,13 +65,14 @@ def mock_moses_punct_normalizer(mocker):
         3)
     ]
 )
-def test_check_for_unknown_tokens_returns_true_found_tokens(mock_nllb_tokenizer, capsys, input_data: dict[str, list[str]], csb_expected_unknown_tokens: int, pl_expected_unknown_tokens: int) -> None:
+def test_check_for_unknown_tokens_returns_true_found_tokens(mock_nllb_tokenizer, capsys, mock_logger, input_data: dict[str, list[str]], csb_expected_unknown_tokens: int, pl_expected_unknown_tokens: int) -> None:
     train_df = pd.DataFrame(input_data)
-    check_for_unknown_tokens(mock_nllb_tokenizer, train_df)
+    normalizer = DataNormalizer(logger=mock_logger)
+    normalizer._DataNormalizer__check_for_unknown_tokens(mock_nllb_tokenizer, train_df)
     output = capsys.readouterr().out.rstrip()
     
-    assert f"Found {csb_expected_unknown_tokens} unknown tokens in the CSB data" in output
-    assert f"Found {pl_expected_unknown_tokens} unknown tokens in the PL data" in output
+    mock_logger.info.assert_any_call(f"Found {csb_expected_unknown_tokens} unknown tokens in the CSB data")
+    mock_logger.info.assert_any_call(f"Found {pl_expected_unknown_tokens} unknown tokens in the PL data")
 
 @pytest.mark.parametrize(
     "input_data, column_name, expected_output_data",
@@ -91,10 +97,11 @@ def test_check_for_unknown_tokens_returns_true_found_tokens(mock_nllb_tokenizer,
         ),
     ]
 )  
-def test_remove_rows_with_unknown_tokens_returns_true_dataframe_match(mock_nllb_tokenizer, input_data: dict[str, list[str]], column_name: str, expected_output_data: dict[str, list[Any]]) -> None:
+def test_remove_rows_with_unknown_tokens_returns_true_dataframe_match(mock_nllb_tokenizer, mock_logger, input_data: dict[str, list[str]], column_name: str, expected_output_data: dict[str, list[Any]]) -> None:
     train_df = pd.DataFrame(input_data)
     train_df_col = train_df[column_name]
-    result_df = remove_rows_with_unknown_tokens(mock_nllb_tokenizer, train_df, train_df_col)
+    normalizer = DataNormalizer(logger=mock_logger)
+    result_df = normalizer._DataNormalizer__remove_rows_with_unknown_tokens(mock_nllb_tokenizer, train_df, train_df_col)
     
     expected_df = pd.DataFrame(expected_output_data).astype({"csb": "object", "pl": "object"}).reset_index(drop=True)
     
@@ -120,9 +127,10 @@ def test_remove_rows_with_unknown_tokens_returns_true_dataframe_match(mock_nllb_
         ),
     ]
 )
-def test_normalize_translation_dataset_returns_true_dataframe_match_call_count_match(mock_moses_punct_normalizer, input_data: str, expected_data: str) -> None:
+def test_normalize_translation_dataset_returns_true_dataframe_match_call_count_match(mock_moses_punct_normalizer, mock_logger, input_data: str, expected_data: str) -> None:
     input_df = pd.DataFrame(input_data)
-    normalized_df = normalize_translation_dataset(input_df)
+    normalizer = DataNormalizer(logger=mock_logger)
+    normalized_df = normalizer._DataNormalizer__normalize_translation_dataset(input_df)
     
     expected_df = pd.DataFrame(expected_data)
     
