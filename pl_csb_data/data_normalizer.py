@@ -23,6 +23,18 @@ class DataNormalizer:
         except Exception as e:
             self.__logger.error(f"Error during unknown token check: {str(e)}")
 
+    def __remove_unprintable_rows(self, train_df: pd.DataFrame) -> pd.DataFrame:
+        def printable_filter(row: pd.Series) -> bool:
+            # ? Unsure yet about casting to string here because something somewhere in this is a float and throws an error
+            # ? Might be useful to check types first but it doesn't seem like a big deal.
+            return all(str(cell).isprintable() for cell in row)
+    
+        filtered_df = train_df[train_df.apply(printable_filter, axis=1)]
+
+        self.__logger.info(f"Removed {train_df.shape[0] - filtered_df.shape[0]} unprintable rows")
+
+        return filtered_df
+
     def __remove_rows_with_unknown_tokens(self, tokenizer: NllbTokenizer, train_df: pd.DataFrame, train_df_col: pd.Series) -> pd.DataFrame:
         try:
             rows_to_drop = []
@@ -54,6 +66,10 @@ class DataNormalizer:
             train_df = pd.read_csv(input_path, sep='\t', index_col=0)
 
             self.__check_for_unknown_tokens(tokenizer, train_df)
+
+            self.__logger.info("Removing unprintable rows")
+            train_df = self.__remove_unprintable_rows(train_df)
+
             self.__logger.info("Normalizing translation dataset")
 
             train_df = self.__normalize_translation_dataset(train_df)
