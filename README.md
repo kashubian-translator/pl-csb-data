@@ -20,6 +20,9 @@ To prepare and normalize data in the `data/input` directory and save the process
 python pl_csb_data
 ```
 
+# Data Scraping
+To scrape or clean scraped data, run the individual `Python` scripts in the `scrapers` directory.
+
 # Running Tests
 To execute tests, run:
 ```bash
