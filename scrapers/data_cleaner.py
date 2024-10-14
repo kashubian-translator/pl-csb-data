@@ -99,8 +99,8 @@ def clean_data():
         'Sunday', 'LongPossessive', 'Short', 'weekday', 'Day', 'Long', 'Ethiopian', '‘', '’', '”', '“', 'filename', 'plain',
         "\" \"", 'image'
     ]
-    polish_file = 'data/dataset.pl.txt'
-    kashubian_file = 'data/dataset.csb.txt'
+    polish_file = '../data/input/dataset.pl.txt'
+    kashubian_file = '../data/input/dataset.csb.txt'
     remove_matching_phrases(polish_file, kashubian_file, phrases_to_remove, 'both')
     remove_duplicated_phrases(polish_file, kashubian_file)
 
