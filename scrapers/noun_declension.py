@@ -6,7 +6,7 @@ from urllib.parse import quote
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
-from utils import send_request_with_retries
+from scrapers.utils import send_request_with_retries
 
 
 API_URL = "https://sloworz.org/api/graphql"
