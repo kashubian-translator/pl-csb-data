@@ -6,7 +6,7 @@ import pandas as pd
 from transformers import NllbTokenizer
 from unittest.mock import MagicMock
 
-from pl_csb_data.data_normalizer import DataNormalizer
+from data_processor.data_normalizer import DataNormalizer
 
 
 @pytest.fixture
@@ -28,7 +28,7 @@ def mock_nllb_tokenizer(mocker: Any) -> MagicMock:
 
 @pytest.fixture
 def mock_moses_punct_normalizer(mocker):
-    mock_mpn = mocker.patch("pl_csb_data.data_normalizer.MosesPunctNormalizer", autospec=True)
+    mock_mpn = mocker.patch("data_processor.data_normalizer.MosesPunctNormalizer", autospec=True)
     mock_instance = mock_mpn.return_value
 
     mock_instance.substitutions = []

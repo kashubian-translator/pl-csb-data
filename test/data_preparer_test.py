@@ -6,7 +6,7 @@ import pytest
 import pandas as pd
 from unittest.mock import MagicMock
 
-from pl_csb_data.data_preparer import DataPreparer
+from data_processor.data_preparer import DataPreparer
 
 
 @pytest.fixture(name="create_temp_file")
@@ -87,7 +87,7 @@ def test_prepare_translation_dataset_returns_true_dataframe_match(mocker: Any, m
     mock_polish_train = ["Polish sentence 1", "Polish sentence 2"]
     mock_kashubian_train = ["Kashubian sentence 1", "Kashubian sentence 2"]
 
-    mocker.patch("pl_csb_data.data_preparer.DataPreparer._DataPreparer__read_text_file", side_effect=[mock_polish_train, mock_kashubian_train])
+    mocker.patch("data_processor.data_preparer.DataPreparer._DataPreparer__read_text_file", side_effect=[mock_polish_train, mock_kashubian_train])
 
     preparer = DataPreparer(logger=mock_logger)
     df = preparer._DataPreparer__prepare_translation_dataset("dummy_source_path", "dummy_target_path", "pl", "csb")
