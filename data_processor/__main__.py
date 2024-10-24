@@ -22,7 +22,7 @@ def process_data(data_paths: dict, language: dict, logger: Logger) -> None:
 if __name__ == "__main__":
     logger = set_up_logger(__name__, "INFO")
 
-    config = config_loader.load("pl_csb_data/config.ini", logger)
+    config = config_loader.load("data_processor/config.ini", logger)
 
     logger.info("Processing training data")
     process_data(config["TRAINING"], config["LANGUAGE"], logger)

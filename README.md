@@ -17,7 +17,7 @@ It is recommended to create a Python virtual environment before proceeding. You 
 # Data Processing
 To prepare and normalize data in the `data/input` directory and save the processed data in the `data/output` directory, run:
 ```bash
-python pl_csb_data
+python data_processor
 ```
 
 # Data Scraping

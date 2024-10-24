@@ -28,7 +28,7 @@ class DataNormalizer:
             # ? Unsure yet about casting to string here because something somewhere in this is a float and throws an error
             # ? Might be useful to check types first but it doesn't seem like a big deal.
             return all(str(cell).isprintable() for cell in row)
-    
+
         filtered_df = train_df[train_df.apply(printable_filter, axis=1)]
 
         self.__logger.info(f"Removed {train_df.shape[0] - filtered_df.shape[0]} unprintable rows")
