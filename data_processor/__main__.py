@@ -27,5 +27,11 @@ if __name__ == "__main__":
     logger.info("Processing training data")
     process_data(config["TRAINING"], config["LANGUAGE"], logger)
 
+    logger.info("Processing validation data")
+    process_data(config["VALIDATION"], config["LANGUAGE"], logger)
+
+    logger.info("Processing test data")
+    process_data(config["TEST"], config["LANGUAGE"], logger)
+
     logger.info("Processing evaluation data")
     process_data(config["EVALUATION"], config["LANGUAGE"], logger)
