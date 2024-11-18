@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     logger.info("Processing validation data")
     process_data(config["VALIDATION"], config["LANGUAGE"], logger)
-    
+
     logger.info("Processing validation debug data")
     process_data(config["VALIDATION_DEBUG"], config["LANGUAGE"], logger)
 
