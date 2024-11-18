@@ -29,5 +29,19 @@ To execute tests, run:
 pytest test
 ```
 
+# Datasets
+
+## Train
+Used to train the model.
+
+## Validation
+Used to calculate loss after each training epoch and check `BLEU` and `chrF++` metrics during development
+
+## Validation Debug
+Used to quickly check `BLEU` and `chrF++` metrics during debugging.
+
+## Test
+Used to check `BLEU` and `chrF++` metrics in the final model evaluation.
+
 # Data Sources
 https://github.com/Helsinki-NLP/Tatoeba-Challenge
