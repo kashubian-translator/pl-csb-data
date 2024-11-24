@@ -42,3 +42,34 @@ def split_data(train_size=0.8, val_size=0.1, test_size=0.1):
     test_trg = [trg_sentences[i] for i in test_indices]
     save_sentences('../data/input/test.src', test_src)
     save_sentences('../data/input/test.trg', test_trg)
+
+
+def __create_mini_file(csb_file, pl_file, csb_mini_file, pl_mini_file, sample_size):
+    with open(csb_file, 'r', encoding='utf-8') as csb, open(pl_file, 'r', encoding='utf-8') as pl:
+        lines_csb = csb.readlines()
+        lines_pl = pl.readlines()
+
+    total_lines = len(lines_csb)
+    sampled_indexes = random.sample(range(total_lines), sample_size)
+
+    with open(csb_mini_file, 'w', encoding='utf-8') as csb_mini, open(pl_mini_file, 'w', encoding='utf-8') as pl_mini:
+        for idx in sampled_indexes:
+            csb_mini.write(lines_csb[idx])
+            pl_mini.write(lines_pl[idx])
+
+
+def create_mini_dataset():
+    dataset_directory = '../data/input'
+    mini_dataset_sizes = {
+        "train": 800,
+        "val": 80
+    }
+    for dataset, size in mini_dataset_sizes.items():
+        csb_path = f"{dataset_directory}/{dataset}.csb.txt"
+        pol_path = f"{dataset_directory}/{dataset}.pol.txt"
+        mini_csb_path = f"{dataset_directory}/{dataset}-mini.csb.txt"
+        mini_pol_path = f"{dataset_directory}/{dataset}-mini.pol.txt"
+        __create_mini_file(csb_path, pol_path, mini_csb_path, mini_pol_path, size)
+
+
+create_mini_dataset()
