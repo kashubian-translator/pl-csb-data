@@ -30,15 +30,15 @@ def split_data(train_size=0.8, val_size=0.1, test_size=0.1):
 
     train_src = [src_sentences[i] for i in train_indices]
     train_trg = [trg_sentences[i] for i in train_indices]
-    save_sentences('../data/input/train.src', train_src)
-    save_sentences('../data/input/train.trg', train_trg)
+    save_sentences('../data/4_split/train.src', train_src)
+    save_sentences('../data/4_split/train.trg', train_trg)
 
     val_src = [src_sentences[i] for i in val_indices]
     val_trg = [trg_sentences[i] for i in val_indices]
-    save_sentences('../data/input/val.src', val_src)
-    save_sentences('../data/input/val.trg', val_trg)
+    save_sentences('../data/4_split/val.src', val_src)
+    save_sentences('../data/4_split/val.trg', val_trg)
 
     test_src = [src_sentences[i] for i in test_indices]
     test_trg = [trg_sentences[i] for i in test_indices]
-    save_sentences('../data/input/test.src', test_src)
-    save_sentences('../data/input/test.trg', test_trg)
+    save_sentences('../data/4_split/test.src', test_src)
+    save_sentences('../data/4_split/test.trg', test_trg)

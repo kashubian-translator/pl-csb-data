@@ -7,15 +7,15 @@ from logger import set_up_logger
 
 def process_data(data_paths: dict, language: dict, logger: Logger) -> None:
     DataPreparer(logger).prepare(
-        data_paths["source_file"],
-        data_paths["target_file"],
-        data_paths["output_file"],
-        language["source_language"],
-        language["target_language"]
+        data_paths["polish_file"],
+        data_paths["kashubian_file"],
+        data_paths["model_ready_file"],
+        language["polish_language_code"],
+        language["kashubian_language_code"]
     )
     DataNormalizer(logger).normalize(
-        data_paths["output_file"],
-        data_paths["output_file"]
+        data_paths["model_ready_file"],
+        data_paths["model_ready_file"]
     )
 
 

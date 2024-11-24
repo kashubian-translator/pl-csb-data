@@ -57,7 +57,7 @@ class DataPreparer:
         try:
             train_df = self.__prepare_translation_dataset(source_path, target_path, source_lang, target_lang)
             if train_df is None:
-                self.__logger.error("Dataset preparation failed, no output file will be written")
+                self.__logger.error("Dataset preparation failed, model ready file won't be written")
                 return
 
             train_df.to_csv(output_path, sep="\t")

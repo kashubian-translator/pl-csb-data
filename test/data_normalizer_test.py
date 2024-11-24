@@ -121,12 +121,12 @@ def test_remove_rows_with_unknown_tokens_returns_true_dataframe_match(mock_nllb_
             {"csb": ["Line 1", "Line 2"], "pl": ["Linia 1", "Linia 2"]},
             {"csb": ["Line 1_normalized", "Line 2_normalized"], "pl": ["Linia 1_normalized", "Linia 2_normalized"]}
         ),
-        # test case 2: empty input
+        # test case 2: empty 4_split
         (
             {"csb": ["", ""], "pl": ["", ""]},
             {"csb": ["_normalized", "_normalized"], "pl": ["_normalized", "_normalized"]}
         ),
-        # test case 2: mixed input with empty and non-empty strings
+        # test case 2: mixed 4_split with empty and non-empty strings
         (
             {"csb": ["Line 1", "  "], "pl": ["Linia 1", "    "]},
             {"csb": ["Line 1_normalized", "_normalized"], "pl": ["Linia 1_normalized", "_normalized"]}

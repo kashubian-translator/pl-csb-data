@@ -87,7 +87,7 @@ def clean_data():
         'dynamics-action', 'image-action', 'drawable-action', 'undo-desc', 'documents-action', 'sample-points-action',
         'dockable-action', 'tab-style', 'preview-size', 'dock-action', 'dialogs-action', 'cursor-info-action', 'inmenu',
         'context-action', 'config-action', 'colormap-action', 'channels-action', 'buffers-action', 'The quality of music',
-        'brushes-action', 'dynamics-output-type', 'select-criterion', 'vector-mode', 'tool-preset-editor-action', 'Number',
+        'brushes-action', 'dynamics-6_model_ready-type', 'select-criterion', 'vector-mode', 'tool-preset-editor-action', 'Number',
         'quick-mask-action', 'images-action', 'help-action', 'gradient-editor-blending', 'phrase', 'fonts-action', 'entries'
         'error-console-action', 'dynamics-editor-action', 'pre', 'brush-editor-action', 'fill-style', 'stroke-method', '×',
         'QPrintPreviewDialog', 'QShortcut', '*', 'NativeSocketEngine', 'context menu item', 'QSystemSemaphore', 'column'
@@ -99,8 +99,8 @@ def clean_data():
         'Sunday', 'LongPossessive', 'Short', 'weekday', 'Day', 'Long', 'Ethiopian', '‘', '’', '”', '“', 'filename', 'plain',
         "\" \"", 'image'
     ]
-    polish_file = '../data/input/dataset.pl.txt'
-    kashubian_file = '../data/input/dataset.csb.txt'
+    polish_file = '../data/4_split/dataset.pl.txt'
+    kashubian_file = '../data/4_split/dataset.csb.txt'
     remove_matching_phrases(polish_file, kashubian_file, phrases_to_remove, 'both')
     remove_duplicated_phrases(polish_file, kashubian_file)
 
