@@ -14,6 +14,27 @@ It is recommended to create a Python virtual environment before proceeding. You 
     pre-commit install
     ```
 
+# Data Directory Structure
+
+The structure of the `data` directory is organised as follows:
+
+- **`0_raw`**  
+  Contains uncleaned data fetched from various data sources with standardised extensions: either .csb.txt or .pl.txt. 
+  This is the initial state of the dataset.
+
+- **`1_cleaned`**  
+  Holds cleaned data, prepared either through scripts, manual correction, or a combination of both.
+
+- **`2_split`**  
+  Includes datasets divided into three subsets:  
+  - **Training Set**  
+  - **Validation Set**  
+  - **Test Set**  
+  For more details, see the **Datasets** section.
+
+- **`3_preprocessed`**  
+  Contains data preprocessed and formatted to be directly fed into the model.
+
 # Data Processing
 To prepare and normalize data in the `data/input` directory and save the processed data in the `data/output` directory, run:
 ```bash
@@ -45,3 +66,8 @@ Used to check `BLEU` and `chrF++` metrics in the final model evaluation.
 
 # Data Sources
 https://github.com/Helsinki-NLP/Tatoeba-Challenge
+https://opus.nlpl.eu
+https://sloworz.org
+https://kaszebe.org
+https://odmiana.net/
+Book "The Life and Adventures of Remus"

@@ -9,13 +9,13 @@ def process_data(data_paths: dict, language: dict, logger: Logger) -> None:
     DataPreparer(logger).prepare(
         data_paths["polish_file"],
         data_paths["kashubian_file"],
-        data_paths["model_ready_file"],
+        data_paths["preprocessed_file"],
         language["polish_language_code"],
         language["kashubian_language_code"]
     )
     DataNormalizer(logger).normalize(
-        data_paths["model_ready_file"],
-        data_paths["model_ready_file"]
+        data_paths["preprocessed_file"],
+        data_paths["preprocessed_file"]
     )
 
 
