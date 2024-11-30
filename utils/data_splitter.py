@@ -1,20 +1,20 @@
 import random
 
 
-def load_sentences(file_path):
+def load_sentences(file_path: str):
     with open(file_path, 'r', encoding='utf-8') as f:
         sentences = f.readlines()
     return sentences
 
 
-def save_sentences(file_path, sentences):
+def save_sentences(file_path: str, sentences: list[str]):
     with open(file_path, 'w', encoding='utf-8') as f:
         f.writelines(sentences)
 
 
 def split_data(train_size=0.8, val_size=0.1, test_size=0.1):
     src_sentences = load_sentences('dataset.csb.txt')
-    trg_sentences = load_sentences('dataset.pl.txt')
+    trg_sentences = load_sentences('dataset.pol.txt')
     assert len(src_sentences) == len(trg_sentences), "Source and target files must have the same number of sentences."
 
     num_sentences = len(src_sentences)

@@ -19,7 +19,7 @@ It is recommended to create a Python virtual environment before proceeding. You 
 The structure of the `data` directory is organised as follows:
 
 - **`0_raw`**  
-  Contains uncleaned data fetched from various data sources with standardised extensions: either .csb.txt or .pl.txt. 
+  Contains uncleaned data fetched from various data sources with standardised extensions: either .csb.txt or .pol.txt. 
   This is the initial state of the dataset.
 
 - **`1_cleaned`**  

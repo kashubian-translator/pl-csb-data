@@ -49,8 +49,8 @@ def fetch_and_save_phrases_with_translations(request_data, pl_file, csb_file, st
 
 
 def main():
-    pl_file = open("../data/2_cleaned/kaszebe.pl.txt", "w")
-    csb_file = open("../data/2_cleaned/kaszebe.csb.txt", "w")
+    pl_file = open("../data/0_raw/bilingual/kaszebe.pol.txt", "w")
+    csb_file = open("../data/0_raw/bilingual/kaszebe.csb.txt", "w")
 
     request_data = {
         'q': '',

@@ -82,7 +82,7 @@ def fetch_and_save_phrases_with_translations(pl_file, csb_file, csb_sentences_fi
 
 
 def main():
-    pl_file = open("../data/2_cleaned/sloworz.pl.txt", "a")
+    pl_file = open("../data/2_cleaned/sloworz.pol.txt", "a")
     csb_file = open("../data/2_cleaned/sloworz.csb.txt", "a")
     csb_sentences_file = open("../data/1_raw/kashubian_only/sloworz.sentences.csb.txt", "a")
 

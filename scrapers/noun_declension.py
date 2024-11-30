@@ -187,7 +187,7 @@ class PhraseFetcher:
 
 
 def main():
-    with open("../data/2_cleaned/declension.pl.txt", "w", encoding="utf-8") as pl_file, \
+    with open("../data/2_cleaned/declension.pol.txt", "w", encoding="utf-8") as pl_file, \
             open("../data/2_cleaned/declension.csb.txt", "w", encoding="utf-8") as csb_file:
         fetcher = PhraseFetcher(pl_file, csb_file)
         fetcher.fetch_and_save_phrases()

@@ -1,7 +1,10 @@
+Launchpad Contributions: Mark Kwidzińsczi https://launchpad.net/~kaszeba
+Aviary.pl <gnomepl\@aviary\.pl>, 2008, 2009, 2010, 2011, 2012
 _
 :
 ...
-""
+…
+"
 ^
 '
 (
@@ -74,7 +77,6 @@ tool-options-action
 text-tool-action
 undo-type
 GNOME
-Launchpad Contributions: Mark Kwidzińsczi https://launchpad.net/~kaszeba
 GIMP
 cap-style
 join-style
@@ -173,3 +175,47 @@ sample-points-action
 dockable-action
 stroke-method
 fill-style
+split into volumes of
+sort by file location
+open recent file
+channels
+vectors
+colormap
+select
+dialogs
+documents
+drawable
+image
+file
+gradient-editor
+convert
+view-zoom
+gradients
+help
+layers
+palette-editor
+palettes
+patterns
+plug-in
+templates
+text-editor
+options
+tool
+presets
+view
+generated
+shape
+type
+color-frame-mode
+hint
+space-bar
+brush-generated-shape
+customsession
+brushes
+buffers
+dockable
+edit
+quick-mask
+sample-points
+dither
+palette
